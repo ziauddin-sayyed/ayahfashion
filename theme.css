@@ -1,0 +1,189 @@
+/* ============================================================
+   Ayah Fashion — light / dark theme
+   Default is light. Dark mode is opt-in via the header toggle.
+   ============================================================ */
+
+:root { color-scheme: light; }
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cream: #141318;
+  --ink: #F4EEF5;
+  --muted: #B7ACB8;
+  --line: #3A313C;
+  --card: #1E1A22;
+  --sage: #242029;
+  --blush: #2A2030;
+  --blush-deep: #4C3548;
+  --primary: #FF87D0;
+  --primary-dark: #FF87D0;
+  --accent: #FF9CDD;
+  --accent-dark: #FFB6E6;
+  --mauve: var(--accent);
+  --gold: var(--accent);
+  --gold-dark: var(--accent-dark);
+  --shadow: 0 20px 60px rgba(0, 0, 0, .5);
+  --shadow-sm: 0 8px 30px rgba(0, 0, 0, .4);
+}
+
+/* ---------- toggle button ---------- */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--card, #fff);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: border-color .2s, transform .2s, background .2s;
+}
+.theme-toggle:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* ---------- page shells ---------- */
+html[data-theme="dark"] body { background: var(--cream); color: var(--ink); }
+html[data-theme="dark"] .splash { background: var(--cream); }
+html[data-theme="dark"] .header { background: rgba(20, 19, 24, .92); }
+html[data-theme="dark"] .nav { color: var(--ink); }
+html[data-theme="dark"] .nav.open,
+html[data-theme="dark"] .header .nav.open { background: var(--card); }
+html[data-theme="dark"] .hamburger span { background: var(--ink); }
+html[data-theme="dark"] .icon-btn svg,
+html[data-theme="dark"] .mini-ico svg { stroke: var(--ink); }
+html[data-theme="dark"] .mini-ico { color: var(--ink); }
+
+/* ---------- surfaces ---------- */
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .info,
+html[data-theme="dark"] .cat-card,
+html[data-theme="dark"] .main-img,
+html[data-theme="dark"] .thumbs img,
+html[data-theme="dark"] .color-tile,
+html[data-theme="dark"] #colors .color-tile,
+html[data-theme="dark"] #mColors .color-tile,
+html[data-theme="dark"] .line-item,
+html[data-theme="dark"] .drawer-foot,
+html[data-theme="dark"] .modal-card,
+html[data-theme="dark"] .chart-card,
+html[data-theme="dark"] .chart-sec,
+html[data-theme="dark"] .policy-links a,
+html[data-theme="dark"] .order,
+html[data-theme="dark"] .addr,
+html[data-theme="dark"] .side,
+html[data-theme="dark"] .card-thumbs,
+html[data-theme="dark"] .empty,
+html[data-theme="dark"] .hero-float,
+html[data-theme="dark"] .btn-ghost,
+html[data-theme="dark"] .btn-sm,
+html[data-theme="dark"] .btn-view,
+html[data-theme="dark"] .mini-add,
+html[data-theme="dark"] .qty,
+html[data-theme="dark"] .chip,
+html[data-theme="dark"] .opt,
+html[data-theme="dark"] .size-chip,
+html[data-theme="dark"] .hamburger,
+html[data-theme="dark"] .icon-btn,
+html[data-theme="dark"] .search-box,
+html[data-theme="dark"] .nl-form,
+html[data-theme="dark"] .filterbtn,
+html[data-theme="dark"] .chart-close,
+html[data-theme="dark"] .g-nav,
+html[data-theme="dark"] .line img,
+html[data-theme="dark"] .close-x,
+html[data-theme="dark"] .tabs button,
+html[data-theme="dark"] .localbox button,
+html[data-theme="dark"] .offers .code,
+html[data-theme="dark"] .offers .cheap a,
+html[data-theme="dark"] .addrbtns button,
+html[data-theme="dark"] .print-btn,
+html[data-theme="dark"] .steps span,
+html[data-theme="dark"] .line-item > button,
+html[data-theme="dark"] .draw-head #closeDrawer,
+html[data-theme="dark"] .survey label,
+html[data-theme="dark"] .totals,
+html[data-theme="dark"] .box {
+  background: var(--card);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .drawer-panel,
+html[data-theme="dark"] .drawer-body { background: var(--cream); }
+
+html[data-theme="dark"] .newsletter {
+  background: linear-gradient(135deg, #241D26 0%, #2C2233 100%) !important;
+  border-color: var(--line) !important;
+}
+
+html[data-theme="dark"] .shipopts label.on,
+html[data-theme="dark"] .survey label.on,
+html[data-theme="dark"] .addr.def { background: var(--sage); }
+
+html[data-theme="dark"] #videoCarousel .owl-nav button,
+html[data-theme="dark"] .hero-visual .owl-nav button {
+  background: var(--card) !important;
+  border-color: var(--line) !important;
+  color: var(--ink) !important;
+}
+
+/* ---------- form fields ---------- */
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+  background: var(--card);
+  border-color: var(--line);
+  color: var(--ink);
+}
+html[data-theme="dark"] .search-box input,
+html[data-theme="dark"] .nl-form input { background: transparent; }
+html[data-theme="dark"] ::placeholder { color: var(--muted); }
+
+/* inline white surfaces (header pills, textareas, empty states) */
+html[data-theme="dark"] [style*="background:#fff"]:not(iframe),
+html[data-theme="dark"] [style*="background: #fff"]:not(iframe) {
+  background: var(--card) !important;
+  color: var(--ink) !important;
+}
+
+/* ---------- buttons that were white with pink text ---------- */
+html[data-theme="dark"] .btn-primary {
+  background: var(--brand-grad);
+  color: var(--on-grad);
+}
+html[data-theme="dark"] .btn-primary:hover {
+  background: var(--brand-grad-hover);
+  color: var(--on-grad);
+}
+html[data-theme="dark"] .opt.active {
+  background: var(--brand-grad);
+  color: var(--on-grad);
+  border-color: transparent;
+}
+
+/* ---------- copy ---------- */
+html[data-theme="dark"] .card p,
+html[data-theme="dark"] .card li { color: var(--ink); }
+html[data-theme="dark"] .card h3 { color: var(--accent); }
+
+/* ---------- misc ---------- */
+html[data-theme="dark"] .toast { color: var(--on-grad); }

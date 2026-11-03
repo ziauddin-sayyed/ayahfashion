@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Checkout — Ayah Fashion</title>
+<link rel="icon" href="https://catalog.wlimg.com/1/4698801/other-images/favicon.ico"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Ayah Fashion"/>
+<meta property="og:title" content="Checkout — Ayah Fashion"/>
+<meta property="og:description" content="Secure checkout at Ayah Fashion, Mumbai."/>
+<meta property="og:image" content="/images/slider/new/3.jpeg"/>
+<meta property="og:image:width" content="1416"/>
+<meta property="og:image:height" content="1111"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Checkout — Ayah Fashion"/>
+<meta name="twitter:description" content="Secure checkout at Ayah Fashion, Mumbai."/>
+<meta name="twitter:image" content="/images/slider/new/3.jpeg"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand-grad:linear-gradient(135deg,#FFF7AD 0%,#FFD0D3 50%,#FFA9FA 100%);--brand-grad-hover:linear-gradient(135deg,#FFEFA0 0%,#FFC4C7 50%,#FF98F6 100%);--on-grad:#3A2B2B}
+:root{--primary:#c0006b;--primary-dark:#c0006b;--accent:#e70080;--accent-dark:#c0006b;--yellow:#f6ba22;--cream:#fdfcff;--blush:#fef0f7;--line:#efe6f0;--muted:#7A6E6A;--ink:#1E1E1E;--sage:#f3f0f7;--card:#fff;--radius:20px}
+*{box-sizing:border-box}html,body{overflow-x:hidden}body{margin:0;font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+.announce{background:var(--brand-grad);color:var(--on-grad);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 16px}
+.announce b{color:#c0006b}
+.header{position:sticky;top:0;z-index:20;background:rgba(255,249,242,.8);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--line);border-top:3px solid transparent;border-image:linear-gradient(90deg,#FFF7AD 0%,#FFD0D3 50%,#FFA9FA 100%) 1}
+.header-inner{max-width:1280px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;position:relative;justify-content:space-between}
+.logo{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px;font-family:"Cormorant Garamond",serif;font-weight:700;font-size:26px;letter-spacing:.08em;line-height:1}
+.logo i{color:var(--accent);font-style:italic;font-family:"Cormorant Garamond",serif}
+.logo img{height:46px;border-radius:8px;padding:4px 6px}
+.nav{display:flex;gap:22px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#4A3F3B}
+.nav a:hover{color:var(--accent)}
+.hamburger{display:none;width:40px;height:40px;border:1px solid var(--line);background:#fff;border-radius:10px;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;flex-shrink:0;transition:.2s}
+.hamburger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
+.hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.nav-backdrop{display:none;position:fixed;inset:0;background:rgba(20,14,14,.32);backdrop-filter:blur(2px);z-index:19}
+.nav-backdrop.open{display:block}
+@media(max-width:900px){
+  .header-inner{gap:12px;padding:12px 14px}
+  .hamburger{display:flex}
+  .nav{display:none}
+  .nav.open{display:flex;position:fixed;top:62px;left:12px;right:12px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.18);z-index:45;gap:0;color:var(--ink)}
+  .nav.open a{padding:14px 8px;border-bottom:none;font-size:14px;color:var(--ink)}
+  .nav.open a:last-child{border-bottom:none}
+}
+.steps{max-width:1280px;margin:0 auto;padding:14px 20px;display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
+.steps b{color:var(--primary)} .steps span{width:28px;height:28px;border-radius:999px;display:grid;place-items:center;border:1px solid var(--line);background:#fff;font-weight:700}
+.steps span.on{background:var(--brand-grad);color:var(--on-grad);border-color:var(--primary)}
+.steps span.done{background:#fff;color:var(--primary);border-color:var(--accent)}
+.wrap{max-width:1280px;margin:10px auto;padding:0 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+.wrap>div{min-width:0}
+.field{min-width:0}
+.field input,.field select,.field textarea{max-width:100%}
+.shipopts label span,.line div{overflow-wrap:anywhere}
+@media(max-width:980px){.wrap{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
+.card h2{font-family:"Cormorant Garamond",serif;margin:0 0 12px;font-size:22px}
+.card h3{margin:18px 0 10px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--primary)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:12px;padding:12px 12px;font-size:14px;outline:none;background:#fff}
+.field input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(108,67,140,.1)}
+.summary{position:sticky;top:90px}
+.lines{display:flex;flex-direction:column;gap:10px;max-height:420px;overflow:auto}
+.line{display:flex;gap:12px;border:1px solid var(--line);border-radius:14px;padding:10px;background:var(--cream)}
+.line img{width:64px;height:64px;border-radius:10px;object-fit:cover;background:#fff}
+.tot{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
+.row{display:flex;justify-content:space-between;margin:6px 0;font-size:14px}
+.row.total{font-weight:800;font-size:18px}
+.btn-primary{width:100%;background:#fff;color:var(--primary);border:none;padding:15px 18px;border-radius:999px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;margin-top:10px;display:inline-flex;justify-content:center;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--brand-grad-hover);color:var(--on-grad)} .btn-primary:disabled{opacity:.6;cursor:not-allowed}
+#placeBtn:hover{color:#000}
+#placeBtn{border:2px solid var(--primary);outline:none}
+#placeBtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn-ghost{width:100%;background:#fff;border:1px solid var(--line);padding:12px;border-radius:999px;font-weight:700;cursor:pointer;margin-top:8px}
+.note{font-size:11px;color:var(--muted);text-align:center;margin-top:8px}
+.offers{margin-top:10px;border:1px dashed var(--accent);border-radius:14px;padding:10px 12px;background:var(--blush);display:none}
+.offers.show{display:block}
+.offers h4{margin:0 0 8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--primary)}
+.offers .off{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:12px}
+.offers .code{border:1px dashed var(--primary);background:#fff;color:var(--primary);border-radius:999px;padding:6px 12px;font-weight:800;cursor:pointer;font-size:12px;letter-spacing:.06em}
+.offers .code:hover{background:var(--brand-grad);color:var(--on-grad)}
+.offers .cheap{display:flex;gap:8px;overflow-x:auto;margin-top:8px}
+.offers .cheap a{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:12px;padding:6px 10px 6px 6px;font-size:12px;font-weight:700}
+.offers .cheap img{width:40px;height:40px;border-radius:8px;object-fit:cover}
+.tabs{display:flex;gap:8px;margin:0 0 14px}
+.tabs button{flex:1;border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px;font-weight:700;cursor:pointer;font-size:13px}
+.tabs button.on{background:var(--brand-grad);color:var(--on-grad);border-color:var(--primary)}
+.localbox{display:none;margin-top:12px;border:1px dashed var(--accent);border-radius:12px;padding:10px 12px;font-size:12px;color:var(--muted);background:var(--blush)}
+.localbox.show{display:block}
+.localbox button{border:1px solid var(--accent);background:#fff;color:var(--accent);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer;font-size:12px;margin:4px 6px 4px 0}
+.shipopts{display:flex;flex-direction:column;gap:10px}
+.shipopts label{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:14px;padding:12px;cursor:pointer;font-size:14px}
+.shipopts label.on{border-color:var(--primary);background:rgba(108,67,140,.05)}
+.accthi{display:flex;align-items:center;gap:10px;background:var(--sage);border-radius:14px;padding:12px;font-size:14px}
+.accthi b{color:var(--primary)}
+.empty{text-align:center;padding:30px;color:var(--muted)}
+.badge{font-size:11px;background:var(--sage);padding:4px 8px;border-radius:999px}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(80px);background:var(--brand-grad);color:var(--on-grad);padding:12px 16px;border-radius:999px;font-size:13px;opacity:0;transition:.3s;z-index:50}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.footer{background:var(--brand-grad);color:var(--on-grad);margin-top:40px;padding:28px 20px}
+.footer-inner{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--on-grad)}
+.modal{position:fixed;inset:0;display:none;place-items:center;padding:20px;z-index:60}
+.modal.open{display:grid}.modal-bg{position:absolute;inset:0;background:rgba(20,14,14,.5);backdrop-filter:blur(6px)}
+.modal-card{position:relative;background:#fff;border-radius:24px;padding:28px;max-width:520px;width:100%;text-align:center}
+.pp-head{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:6px}
+.pp-badge{background:#5f259f;color:#fff;font-weight:800;font-size:12px;letter-spacing:.08em;padding:4px 10px;border-radius:999px}
+.pp-amt{font-size:28px;font-weight:800;margin:6px 0}
+.pp-status{font-size:13px;color:var(--muted);background:var(--sage);border-radius:12px;padding:10px 12px;margin:10px 0;word-break:break-word}
+.pp-status.ok{background:#e9f9ef;color:#0d7a3f}
+.pp-status.err{background:#fdecec;color:#b3261e}
+.pp-btnrow{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.pp-btnrow .btn-ghost,.pp-btnrow .btn-primary{margin-top:0;flex:1;min-width:140px}
+.pp-paybtn{background:#5f259f!important;color:#fff!important}
+.pp-paybtn:hover{background:#4a1d7d!important}
+.pp-meta{font-size:11px;color:var(--muted);margin-top:8px;word-break:break-all}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+/* ---- mobile / responsive fixes ---- */
+@media(max-width:980px){.summary{position:static}}
+@media(max-width:640px){
+  .announce{font-size:10px;letter-spacing:.08em;padding:8px 10px}
+  .header-inner{padding:10px 12px;gap:10px}
+  .logo{position:static;transform:none;font-size:19px}
+  .logo img{height:34px}
+  .header-inner>a:last-child{font-size:11px!important;padding:7px 10px!important;white-space:nowrap}
+  .steps{padding:10px 12px;font-size:12px;overflow-x:auto;white-space:nowrap}
+  .wrap{padding:0 12px;gap:14px}
+  .card{padding:16px;border-radius:16px}
+  .modal{padding:12px}
+  .modal-card{padding:20px 16px;border-radius:18px;max-height:92vh;overflow:auto}
+  .pp-btnrow .btn-ghost,.pp-btnrow .btn-primary{min-width:0}
+  .pp-amt{font-size:22px}
+  .shipopts label{font-size:13px;padding:10px}
+  .btn-primary{padding:14px 12px}
+}
+</style>
+<link rel="stylesheet" href="../theme.css"/>
+<script src="../theme.js"></script>
+</head>
+<body>
+<div class="announce">Secure Checkout • Ayah Fashion • A-7 Kasturchand Mill Compound, Mumbai – 400028 • <b>+91 70219 46362</b></div>
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo"><img src="../images/logo_new.png" alt=""/></a>
+    <button class="hamburger" id="hamBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav"><a href="../#shop">Shop</a><a href="../products/">Products</a><a href="../profile/" id="ordersLink" style="display:none">My Profile</a></nav>
+    <div style="flex:1"></div>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <a href="../" style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:8px 14px;border-radius:999px;background:#fff">← Continue Shopping</a>
+<button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  </div>
+</header>
+<div class="steps"><span class="done">✓</span> Bag <span>—</span> <span class="on">2</span> <b>Account & Details</b> <span>—</span> <span>3</span> <b>Delivery & Payment</b></div>
+
+<div class="wrap">
+  <div>
+    <div class="card" id="accountCard">
+      <h2>Account</h2>
+      <div id="loggedOut">
+        <div class="field"><label>Phone Number *</label><input id="otpPhone" inputmode="numeric" maxlength="13" placeholder="10-digit mobile number"/></div>
+        <button class="btn-ghost" id="otpSendBtn" onclick="sendOtp()">Send OTP on WhatsApp</button>
+        <div id="otpBox" style="display:none;margin-top:12px">
+          <div class="field"><label>Enter OTP *</label><input id="otpCode" inputmode="numeric" maxlength="6" placeholder="6-digit OTP"/></div>
+          <button class="btn-ghost" id="otpVerifyBtn" onclick="verifyOtp()">Verify & Login</button>
+          <p class="note" id="otpTimer"></p>
+          <p class="note"><a href="#" onclick="sendOtp(true);return false;" style="color:var(--primary);text-decoration:underline">Resend OTP</a></p>
+        </div>
+        <div class="localbox" id="localLoginBox">🧪 <b>Local testing</b> — test number <b>3333333333</b>, OTP <b>123456</b></div>
+        <p class="note">Login with your phone number to continue checkout.</p>
+      </div>
+      <div id="loggedIn" style="display:none"><div class="accthi">👋 Hi, <b id="acctName">—</b><span style="color:var(--muted);font-size:12px" id="acctEmail"></span><button class="btn-ghost" style="width:auto;margin:0 0 0 auto;padding:8px 16px" onclick="doLogout()">Log out</button></div></div>
+    </div>
+    <div class="card" id="shipCard" style="margin-top:14px">
+      <h2>Shipping Details</h2>
+      <form id="form">
+        <h3>Shipping address</h3>
+        <div id="addrBook" style="display:none">
+          <div class="shipopts" id="addrOpts"><p class="note" style="text-align:left;margin:0">Loading saved addresses…</p></div>
+          <button type="button" class="btn-ghost" style="width:auto;padding:10px 18px;margin-top:10px" onclick="openAddrModal(event)">+ New Address</button>
+        </div>
+        <div id="guestAddr">
+          <div class="grid2">
+            <div class="field"><label>First name *</label><input required id="firstName" placeholder="Aqueel"/></div>
+            <div class="field"><label>Last name *</label><input required id="lastName" placeholder="Khan"/></div>
+          </div>
+          <div class="field" style="margin-top:12px"><label>Phone *</label><input required id="phone" placeholder="+91 70219 46362"/></div>
+          <div class="field" style="margin-top:12px"><label>Street address *</label><input required id="street" placeholder="A-7, Kasturchand Mill Compound, M.C. Jawale Marg"/></div>
+          <div class="grid2" style="margin-top:12px">
+            <div class="field"><label>City *</label><input required id="city" value="Mumbai"/></div>
+            <div class="field"><label>State / Country Area *</label><input required id="state" value="Maharashtra"/></div>
+          </div>
+          <div class="grid2" style="margin-top:12px">
+            <div class="field"><label>Zipcode *</label><input required id="postal" value="400028"/></div>
+            <div class="field"><label>Country</label><select id="country"><option value="IN" selected>India (IN)</option></select></div>
+          </div>
+        </div>
+        <div class="localbox" id="localAddrBox">🧪 <b>Local testing</b><br/><button type="button" onclick="fillDummyAddr()">Fill dummy address</button></div>
+
+        <h3>Delivery method</h3>
+        <div class="shipopts" id="shipOpts"><p class="note" style="text-align:left;margin:0">Select an address to see delivery options.</p></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="summary" id="summaryCol">
+    <div class="card">
+      <h2>Order summary <span class="badge" id="countBadge">0 items</span></h2>
+      <div class="lines" id="lines"></div>
+      <div style="display:flex;gap:8px;margin-top:10px"><input id="coupon" placeholder="Coupon code" style="flex:1;border:1px solid var(--line);border-radius:999px;padding:10px 14px"/><button class="btn-ghost" id="promoBtn" style="width:auto;padding:10px 16px" onclick="applyCoupon()">Apply</button></div>
+      <div class="note" id="promoMsg" style="display:none"></div>
+      <div class="offers" id="offersBox"><h4>🎁 Available offers — tap code to apply</h4><div id="offersList"></div><div class="cheap" id="cheapList" style="display:none"></div></div>
+      <div class="tot" id="totals"></div>
+      <div class="field" style="margin-top:10px"><label>Order notes (optional)</label><textarea id="notes" rows="2" placeholder="Delivery instructions..." style="border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14px;outline:none;background:#fff;font-family:inherit;resize:vertical"></textarea></div>
+      <button class="btn-primary" id="placeBtn" onclick="placeOrder()">Pay : <span id="payTotal">—</span></button>
+      <p class="note">Need help? WhatsApp <a href="https://api.whatsapp.com/send?phone=917021946362" target="_blank" style="color:var(--primary);text-decoration:underline">+91 70219 46362</a></p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer"><div class="footer-inner"><span>© 2026 Ayah Fashion — All Rights Reserved • Ayah Fashion</span><span><a href="../terms-and-conditions/" style="color:var(--on-grad)">Terms</a> • <a href="../privacy-policy/" style="color:var(--on-grad)">Privacy</a> • <a href="../refund-policy/" style="color:var(--on-grad)">Refunds</a> • <a href="../return-policy/" style="color:var(--on-grad)">Returns</a> • <a href="../shipping-policy/" style="color:var(--on-grad)">Shipping</a></span><span>Theme #FFF7AD • #FFD0D3 • #FFA9FA • Mumbai 400028</span></div></footer>
+
+<div class="modal" id="addrModal"><div class="modal-bg" onclick="closeAddrModal()"></div><div class="modal-card" style="text-align:left">
+  <div class="pp-head"><b style="font-size:18px">+ New Address</b></div>
+  <p style="font-size:12px;color:var(--muted);margin:0 0 10px;text-align:center">Saved to your account and selected for this checkout</p>
+  <div class="grid2">
+    <div class="field"><label>First name *</label><input id="naFirst" placeholder="Aqueel"/></div>
+    <div class="field"><label>Last name *</label><input id="naLast" placeholder="Khan"/></div>
+  </div>
+  <div class="field" style="margin-top:12px"><label>Phone *</label><input id="naPhone" placeholder="+91 70219 46362"/></div>
+  <div class="field" style="margin-top:12px"><label>Street address *</label><input id="naStreet" placeholder="A-7, Kasturchand Mill Compound"/></div>
+  <div class="grid2" style="margin-top:12px">
+    <div class="field"><label>City *</label><input id="naCity" value="Mumbai"/></div>
+    <div class="field"><label>Country Area (State) *</label><input id="naState" value="Maharashtra"/></div>
+  </div>
+  <div class="grid2" style="margin-top:12px">
+    <div class="field"><label>Zipcode *</label><input id="naPostal" value="400028"/></div>
+    <div class="field"><label>Country *</label><select id="naCountry"><option value="IN" selected>India (IN)</option><option value="US">United States (US)</option><option value="GB">United Kingdom (GB)</option><option value="AE">UAE (AE)</option><option value="SA">Saudi Arabia (SA)</option></select></div>
+  </div>
+  <div class="pp-status" id="addrStatus" style="display:none"></div>
+  <div class="pp-btnrow">
+    <button class="btn-primary pp-paybtn" id="addrSaveBtn" style="text-decoration:none;border:none;cursor:pointer" onclick="saveNewAddress()">Save Address</button>
+  </div>
+  <div class="pp-btnrow">
+    <button class="btn-ghost" style="flex:1" onclick="closeAddrModal()">Cancel</button>
+  </div>
+</div></div>
+<div class="modal" id="cashfreeModal"><div class="modal-bg" onclick="closeCashfreePopup(false)"></div><div class="modal-card" style="text-align:left">
+  <div class="pp-head"><span class="pp-badge" style="background:#0a6cff">Cashfree</span><b style="font-size:18px">Complete your payment</b></div>
+  <p style="font-size:12px;color:var(--muted);margin:0;text-align:center">UPI • Cards • Netbanking • Secure Cashfree checkout</p>
+  <div style="text-align:center" class="pp-amt" id="ppAmt">—</div>
+  <div class="pp-status" id="ppStatus">Preparing Cashfree order…</div>
+  <div class="pp-btnrow">
+    <a id="ppPayLink" href="#" target="_blank" rel="noopener" class="btn-primary pp-paybtn" style="text-decoration:none;display:none;background:#0a6cff!important">Pay with Cashfree →</a>
+  </div>
+  <div id="ppFrameWrap" style="display:none;margin-top:12px">
+    <iframe id="ppFrame" title="Cashfree payment" style="width:100%;height:clamp(420px,60vh,540px);border:1px solid var(--line);border-radius:14px;background:#fff"></iframe>
+    <p class="note">If the payment page doesn't load here, <a id="ppNewTab" href="#" target="_blank" rel="noopener" style="color:var(--primary);text-decoration:underline">open it in a new tab →</a></p>
+  </div>
+  <div class="pp-btnrow" id="ppRetryRow" style="display:none">
+    <button class="btn-ghost" onclick="retryCashfree()">↻ Try Again — New Payment</button>
+  </div>
+  <div class="pp-btnrow">
+    <button class="btn-ghost" style="flex:1" onclick="checkCashfreeStatus(true)">Check Status</button>
+    <button class="btn-ghost" style="flex:1" onclick="closeCashfreePopup(true)">Cancel</button>
+  </div>
+  <div class="pp-meta" id="ppMeta"></div>
+  <p class="note">After paying on Cashfree you return here and the order confirms automatically. Keep this popup open until the order is placed.</p>
+</div></div>
+<div class="modal" id="success"><div class="modal-bg" onclick="closeSucc()"></div><div class="modal-card">
+  <div style="font-size:40px">🎉</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;margin:8px 0">Order confirmed!</h2>
+  <p style="color:var(--muted)">Thank you for shopping with <b>Ayah Fashion</b>.<br/>Your bag has been cleared. A confirmation has been simulated.</p>
+  <p style="font-size:12px;background:var(--sage);padding:10px;border-radius:12px" id="succId">Checkout ID: —</p>
+  <a href="../" class="btn-primary" style="text-decoration:none">Back to Store</a>
+  <a href="../profile/" id="succOrders" class="btn-ghost" style="text-decoration:none;display:none">View Profile →</a>
+  <p style="font-size:11px;color:var(--muted);margin-top:8px">Questions? +91 70219 46362 • +91 70219 46362</p>
+</div></div>
+<div class="toast" id="toast"></div>
+<script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+<script src="../config.js"></script>
+<script>
+const GRAPHQL=window.APP_CONFIG.GRAPHQL, CASHFREE_BASE=window.APP_CONFIG.CASHFREE_BASE||window.APP_CONFIG.PAYMENTS_BASE||window.APP_CONFIG.API_BASE;
+const IS_LOCAL=window.APP_CONFIG.IS_LOCAL, CHANNEL=window.APP_CONFIG.CHANNEL;
+let CASHFREE_PENDING=JSON.parse(localStorage.getItem("ak_cashfree_pending")||"null");
+let CART=JSON.parse(localStorage.getItem("ak_cart")||"[]");
+let USER=JSON.parse(localStorage.getItem("ak_user")||"null"), TOKEN=localStorage.getItem("ak_token")||null;
+let CHECKOUT=null, CHECKOUT_KEY="", SHIPMETHOD=null, SHIP_PRICE=null, SHIP_CACHE=[];
+let PROMO_CODE=null, PROMO_DISCOUNT=0, LAST_TOTAL_TXT="—";
+let ADDR_LIST=[], SELECTED_ADDR=null;
+function money(a,c="INR"){return new Intl.NumberFormat('en-IN',{style:'currency',currency:c,maximumFractionDigits:0}).format(a)}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+async function gql(q,v={},token=null){const h={"Content-Type":"application/json"}; if(token) h["Authorization"]="Bearer "+token; const r=await fetch(GRAPHQL,{method:"POST",headers:h,body:JSON.stringify({query:q,variables:v})});const j=await r.json(); if(j.errors) throw new Error(j.errors[0]?.message||"Checkout error"); return j.data}
+/* ---------- account ---------- */
+/* ---------- phone OTP account (WhatsApp) ---------- */
+let _otpTimerInt=null;
+function normPhone(){const d=(document.getElementById('otpPhone').value||"").replace(/\D/g,""); return d.length>10?d.slice(-10):d;}
+async function apiPost(path,body){const r=await fetch(window.APP_CONFIG.API_BASE+path,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}); let j={}; try{j=await r.json();}catch(e){} if(!r.ok) throw new Error((j&&j.error)||("Request failed ("+r.status+")")); return j;}
+function startOtpTimer(){clearInterval(_otpTimerInt); let s=30; const el=document.getElementById('otpTimer'); el.textContent=`Resend available in ${s}s`; _otpTimerInt=setInterval(()=>{s--; if(s<=0){clearInterval(_otpTimerInt); el.textContent="";} else el.textContent=`Resend available in ${s}s`;},1000);}
+async function sendOtp(){
+  const phone=normPhone();
+  if(!/^[6-9]\d{9}$/.test(phone)) return toast("Enter a valid 10-digit mobile number");
+  const btn=document.getElementById('otpSendBtn'); btn.disabled=true; btn.textContent="Sending OTP…";
+  try{
+    let j;
+    try{ j=await apiPost("/auth/send-whatsapp-otp/",{phone}); }
+    catch(e){ j=/\(404\)/.test(e.message)?await apiPost("/auth/send-otp/",{phone}):Promise.reject(e); }
+    document.getElementById('otpBox').style.display="";
+    toast(j.new_otp===false?"OTP re-sent — use the previous code":"OTP sent on WhatsApp ✓");
+    startOtpTimer();
+    document.getElementById('otpCode').focus();
+  }catch(e){ toast((e.message||"Could not send OTP").slice(0,140)); }
+  finally{ btn.disabled=false; btn.textContent="Send OTP on WhatsApp"; }
+}
+async function verifyOtp(){
+  const phone=normPhone(), code=(document.getElementById('otpCode').value||"").replace(/\D/g,"");
+  if(!/^[6-9]\d{9}$/.test(phone)) return toast("Enter a valid 10-digit mobile number");
+  if(code.length!==6) return toast("Enter the 6-digit OTP");
+  const btn=document.getElementById('otpVerifyBtn'); btn.disabled=true; btn.innerHTML=`<span class="spin"></span> Verifying…`;
+  try{
+    const j=await apiPost("/auth/verify-otp/",{phone,code});
+    if(!j.access_token) throw new Error("Login failed — try again");
+    TOKEN=j.access_token; localStorage.setItem("ak_token",TOKEN);
+    if(j.refresh_token) localStorage.setItem("ak_refresh",j.refresh_token);
+    const me=await gql(`{me{id email firstName lastName}}`,{},TOKEN);
+    if(!me?.me) throw new Error("Login failed — try again");
+    USER=me.me; localStorage.setItem("ak_user",JSON.stringify(USER));
+    CHECKOUT=null; refreshAcct(); toast("Logged in ✓");
+  }catch(e){ toast((e.message||"Invalid OTP").slice(0,140)); }
+  finally{ btn.disabled=false; btn.textContent="Verify & Login"; }
+}
+function refreshAcct(){const on=!!(USER&&TOKEN); document.getElementById('loggedOut').style.display=on?"none":""; document.getElementById('loggedIn').style.display=on?"":"none"; document.getElementById('shipCard').style.display=on?"":"none"; document.getElementById('summaryCol').style.display=on?"":"none"; if(on){document.getElementById('acctName').textContent=USER.firstName||USER.email; document.getElementById('acctEmail').textContent="("+USER.email+")"; document.getElementById('addrBook').style.display=""; document.getElementById('guestAddr').style.display="none"; loadAddresses();}else{document.getElementById('addrBook').style.display="none"; document.getElementById('guestAddr').style.display=""; ADDR_LIST=[]; SELECTED_ADDR=null;}}
+function doLogout(){USER=null; TOKEN=null; CHECKOUT=null; SHIPMETHOD=null; SHIP_PRICE=null; SHIP_CACHE=[]; PROMO_CODE=null; PROMO_DISCOUNT=0; ADDR_LIST=[]; SELECTED_ADDR=null; localStorage.removeItem("ak_token"); localStorage.removeItem("ak_refresh"); localStorage.removeItem("ak_user"); updatePromoUI(); document.getElementById('coupon').value=""; refreshAcct(); render(); toast("Logged out")}
+function fillDummyAddr(){const set=(id,v)=>{const el=document.getElementById(id); if(el) el.value=v;}; set('phone',"+917021946362"); set('firstName',"Dummy"); set('lastName',"User"); set('street',"A-7, Kasturchand Mill Compound"); set('city',"Mumbai"); set('state',"Maharashtra"); set('postal',"400028"); toast("Dummy address filled"); refreshDelivery(true);}
+/* ---------- address book ---------- */
+async function loadAddresses(){
+  const box=document.getElementById('addrOpts');
+  if(!(USER&&TOKEN)) return;
+  try{
+    const d=await gql(`{me{email addresses{id firstName lastName streetAddress1 city postalCode country{code} countryArea phone isDefaultShippingAddress}}}`,{},TOKEN);
+    ADDR_LIST=d?.me?.addresses||[];
+    if(!ADDR_LIST.length){ box.innerHTML=`<p class="note" style="text-align:left;margin:0">No saved addresses yet — tap + New Address.</p>`; SELECTED_ADDR=null; return; }
+    const di=ADDR_LIST.findIndex(a=>a.isDefaultShippingAddress);
+    const sel=di>=0?di:0;
+    renderAddrBook(sel);
+    refreshDelivery(true);
+  }catch(e){ console.warn("addresses:",e.message); box.innerHTML=`<p class="note" style="text-align:left;margin:0">Couldn't load addresses — use + New Address.</p>`; }
+}
+function renderAddrBook(selIdx){
+  const box=document.getElementById('addrOpts');
+  SELECTED_ADDR=ADDR_LIST[selIdx]||null;
+  box.innerHTML=ADDR_LIST.map((a,i)=>{
+    const code=(a.country&&a.country.code)||"IN";
+    return `<label class="${i===selIdx?'on':''}"><input type="radio" name="addr" value="${i}" ${i===selIdx?'checked':''} onchange="pickAddr(${i})"/> <span style="flex:1"><b>${a.firstName} ${a.lastName}</b>${a.isDefaultShippingAddress?' <span class="badge">Default</span>':''}<br/><span style="font-size:12px;color:var(--muted)">${a.streetAddress1}, ${a.city}, ${a.countryArea||""} ${a.postalCode} (${code})${a.phone?" • "+a.phone:""}</span></span></label>`;
+  }).join("");
+}
+function pickAddr(i){ SELECTED_ADDR=ADDR_LIST[i]||null; document.querySelectorAll('#addrOpts label').forEach((l,j)=>l.classList.toggle('on',j===i)); CHECKOUT=null; SHIP_PRICE=null; SHIP_CACHE=[]; refreshDelivery(true); }
+function openAddrModal(e){ if(e) e.preventDefault(); const st=document.getElementById('addrStatus'); st.style.display="none"; document.getElementById('addrModal').classList.add('open'); const cp=(USER&&TOKEN&&SELECTED_ADDR?.phone)||document.getElementById('phone')?.value||""; if(cp&&!document.getElementById('naPhone').value) document.getElementById('naPhone').value=cp; }
+function closeAddrModal(){ document.getElementById('addrModal').classList.remove('open'); }
+async function saveNewAddress(){
+  const v=id=>document.getElementById(id).value.trim();
+  const input={firstName:v('naFirst'),lastName:v('naLast'),streetAddress1:v('naStreet'),city:v('naCity'),postalCode:v('naPostal'),country:v('naCountry')||"IN",countryArea:v('naState'),phone:v('naPhone')||SELECTED_ADDR?.phone||document.getElementById('phone')?.value.trim()||""};
+  const st=document.getElementById('addrStatus'); st.style.display=""; st.className="pp-status";
+  if(!input.firstName||!input.lastName||!input.streetAddress1||!input.city||!input.postalCode||!input.countryArea){ st.classList.add("err"); st.textContent="Please fill all required fields."; return; }
+  const btn=document.getElementById('addrSaveBtn'); btn.disabled=true; btn.innerHTML=`<span class="spin"></span> Saving…`;
+  try{
+    if(USER&&TOKEN){
+      const d=await gql(`mutation($in:AddressInput!){accountAddressCreate(input:$in){address{id firstName lastName streetAddress1 city postalCode country{code} countryArea phone isDefaultShippingAddress} errors{field message code}}}`,
+        {in:input},TOKEN);
+      if(d.accountAddressCreate.errors?.length) throw new Error(d.accountAddressCreate.errors.map(e=>e.message).join(", "));
+      const na=d.accountAddressCreate.address;
+      ADDR_LIST.push(na);
+      if(ADDR_LIST.length===1){ try{ await gql(`mutation($id:ID!,$t:AddressTypeEnum!){accountSetDefaultAddress(id:$id,type:$t){user{defaultShippingAddress{id}} accountErrors{field message code}}}`,{id:na.id,t:"SHIPPING"},TOKEN); na.isDefaultShippingAddress=true; }catch(e){ console.warn("set default:",e.message); } }
+      renderAddrBook(ADDR_LIST.length-1);
+      const cp=document.getElementById('phone'); if(cp&&!cp.value&&na.phone) cp.value=na.phone;
+    }else{
+      SELECTED_ADDR={...input,country:{code:input.country},isDefaultShippingAddress:true};
+    }
+    CHECKOUT=null; SHIP_PRICE=null; SHIP_CACHE=[]; closeAddrModal(); toast("Address saved ✓"); refreshDelivery(true);
+  }catch(e){ st.classList.add("err"); st.textContent="❌ "+e.message.slice(0,200); }
+  finally{ btn.disabled=false; btn.textContent="Save Address"; }
+}
+/* ---------- checkout flow ---------- */
+function checkoutEmail(addrPhone){
+  let e=(USER&&USER.email)||"";
+  // Backend phone-users have pseudo emails like 7208649034@phoneuser (no TLD)
+  // which Saleor rejects — normalize to 7208649034@phoneuser.in
+  const m=e.match(/^(\+?\d+)@phoneuser$/i);
+  if(m) e=m[1].replace(/^\+/,"")+"@phoneuser.in";
+  if(e && /.+@.+\..+/.test(e)) return e;
+  const digits=(addrPhone||"").replace(/\D/g,"").slice(-10);
+  return digits?`${digits}@phoneuser.in`:"guest@phoneuser.in";
+}
+function formAddr(){
+  if(USER&&TOKEN&&SELECTED_ADDR){
+    const s=SELECTED_ADDR, code=(s.country&&s.country.code)||s.country||"IN";
+    return {firstName:s.firstName,lastName:s.lastName,streetAddress1:s.streetAddress1,city:s.city,postalCode:s.postalCode,country:code,countryArea:s.countryArea||"",phone:(s.phone||"").trim()};
+  }
+  return {firstName:document.getElementById('firstName').value.trim(),lastName:document.getElementById('lastName').value.trim(),streetAddress1:document.getElementById('street').value.trim(),city:document.getElementById('city').value.trim(),postalCode:document.getElementById('postal').value.trim(),country:document.getElementById('country')?.value||"IN",countryArea:document.getElementById('state').value.trim(),phone:document.getElementById('phone').value.trim()};
+}
+function validForm(silent){const a=formAddr(); const email=checkoutEmail(a.phone); if(USER&&TOKEN&&!SELECTED_ADDR){if(!silent) toast("Please select or add a shipping address"); return null;} if(!a.phone||!a.firstName||!a.lastName||!a.streetAddress1||!a.city||!a.postalCode) {if(!silent) toast("Please fill phone + full address"); return null;} return {email, addr:a}}
+function sizeNote(){return CART.map(c=>`${c.vName||c.sku} x${c.qty}${c.size?` in Size ${c.size}`:""}`).join("; ")}
+async function ensureCheckout(email,addr){
+  const key=JSON.stringify([CART,email,addr]);
+  if(CHECKOUT&&CHECKOUT_KEY===key) return CHECKOUT;
+  // Drop lines with missing / malformed variantIds (e.g. stale ak_cart from
+  // another env, or a Product id used as variantId). Saleor would reject the
+  // whole checkoutCreate with "Could not resolve to a node...".
+  const isVariantId=(id)=>{
+    if(!id || typeof id!=="string") return false;
+    try{
+      const s=atob(id);
+      return s.startsWith("ProductVariant:");
+    }catch(e){ return false; }
+  };
+  const bad=CART.filter(c=>!isVariantId(c.variantId));
+  if(bad.length){
+    CART=CART.filter(c=>isVariantId(c.variantId));
+    localStorage.setItem("ak_cart",JSON.stringify(CART));
+    try{render();}catch(e){}
+    if(!CART.length) throw new Error("That item is no longer available — your bag was cleared. Please re-add the product.");
+  }
+  if(!CART.length) throw new Error("Your bag is empty.");
+  const lines=CART.map(c=>({quantity:c.qty,variantId:c.variantId}));
+  const notes=[document.getElementById('notes').value.trim(),("Sizes: "+sizeNote())].filter(Boolean).join(" | ");
+  const d=await gql(`mutation($lines:[CheckoutLineInput!]!,$email:String,$addr:AddressInput){checkoutCreate(input:{channel:"${CHANNEL}",lines:$lines,email:$email,shippingAddress:$addr,billingAddress:$addr}){checkout{id token} errors{field message code}}}`,
+    {lines,email,addr});
+  if(d.checkoutCreate.errors?.length){
+    const msgs=d.checkoutCreate.errors.map(e=>e.message).join(", ");
+    // Variant deleted / unpublished / not in channel "in" → Saleor returns
+    // "Could not resolve to a node...". Auto-drop the stale lines so the
+    // next attempt can succeed after re-adding.
+    if(/could not resolve to a node/i.test(msgs)){
+      const ids=new Set(lines.map(l=>l.variantId));
+      CART=CART.filter(c=>!ids.has(c.variantId));
+      localStorage.setItem("ak_cart",JSON.stringify(CART));
+      CHECKOUT=null; CHECKOUT_KEY="";
+      try{render();}catch(e){}
+      throw new Error("That variant (ProductVariant:194 or similar) no longer exists in channel \"in\" — it was removed from your bag. Please re-add the product from the shop to get a fresh variant.");
+    }
+    throw new Error(msgs);
+  }
+  CHECKOUT=d.checkoutCreate.checkout; CHECKOUT_KEY=key; SHIPMETHOD=null;
+  const note=[document.getElementById('notes').value.trim(),("Sizes: "+sizeNote())].filter(Boolean).join(" | ").slice(0,500);
+  try{await gql(`mutation($id:ID!,$n:String!){checkoutCustomerNoteUpdate(id:$id,customerNote:$n){checkout{id} errors{field message}}}`,
+    {id:CHECKOUT.id,n:note});}catch(e){console.warn("note skipped:",e.message)}
+  if(USER&&TOKEN){try{await gql(`mutation($cid:ID!,$uid:ID!){checkoutCustomerAttach(checkoutId:$cid,customerId:$uid){checkout{id} errors{field message}}}`,
+    {cid:CHECKOUT.id,uid:USER.id},TOKEN);}catch(e){console.warn("attach skipped:",e.message)}}
+  if(PROMO_CODE){try{await applyPromoToCheckout(CHECKOUT.id,PROMO_CODE);}catch(e){console.warn("promo re-apply:",e.message); PROMO_CODE=null; PROMO_DISCOUNT=0; updatePromoUI();}}
+  return CHECKOUT;
+}
+async function applyPromoToCheckout(checkoutId,code){
+  const d=await gql(`mutation($id:ID!,$code:String!){checkoutAddPromoCode(id:$id,promoCode:$code){checkout{id discount{amount currency} voucherCode} errors{field message code}}}`,
+    {id:checkoutId,code});
+  if(d.checkoutAddPromoCode.errors?.length) throw new Error(d.checkoutAddPromoCode.errors.map(e=>e.message).join(", "));
+  const co=d.checkoutAddPromoCode.checkout;
+  PROMO_CODE=co.voucherCode||code.toUpperCase();
+  PROMO_DISCOUNT=co.discount?co.discount.amount:0;
+  updatePromoUI();
+  return co;
+}
+async function fetchShipMethods(){
+  const d=await gql(`{checkout(id:"${CHECKOUT.id}"){shippingMethods{id name price{amount currency}} totalPrice{gross{amount currency}}}}`.replace("${CHECKOUT.id}",CHECKOUT.id));
+  return d.checkout;
+}
+function renderShipMethods(methods,total){
+  const box=document.getElementById('shipOpts');
+  if(!methods?.length){SHIPMETHOD=null; SHIP_PRICE=null; SHIP_CACHE=[]; box.innerHTML=`<p class="note" style="text-align:left;margin:0">Delivery is not available in your area.</p>`; render(); return false;}
+  SHIP_CACHE=methods;
+  const sorted=[...methods].sort((a,b)=>a.price.amount-b.price.amount);
+  if(!SHIPMETHOD||!methods.some(m=>m.id===SHIPMETHOD)) SHIPMETHOD=sorted[0].id;
+  const sel=methods.find(m=>m.id===SHIPMETHOD);
+  SHIP_PRICE=sel?{amount:sel.price.amount,currency:sel.price.currency}:null;
+  box.innerHTML=methods.map(m=>`<label class="${m.id===SHIPMETHOD?'on':''}"><input type="radio" name="ship" value="${m.id}" ${m.id===SHIPMETHOD?'checked':''} onchange="pickShip('${m.id}')"/> <span style="flex:1"><b>${m.name}</b></span><b>${money(m.price.amount,m.price.currency)}</b></label>`).join("");
+  render();
+  return true;
+}
+function pickShip(id){SHIPMETHOD=id; document.querySelectorAll('#shipOpts label').forEach(l=>l.classList.toggle('on',l.querySelector('input').value===id)); const m=SHIP_CACHE.find(x=>x.id===id); if(m){SHIP_PRICE={amount:m.price.amount,currency:m.price.currency}; render();} persistShipMethod();}
+async function persistShipMethod(){
+  if(!CHECKOUT||!SHIPMETHOD) return;
+  try{
+    await gql(`mutation($id:ID!,$m:ID!){checkoutDeliveryMethodUpdate(id:$id,deliveryMethodId:$m){checkout{id} errors{field message code}}}`,
+      {id:CHECKOUT.id,m:SHIPMETHOD}).then(d=>{if(d.checkoutDeliveryMethodUpdate.errors?.length) throw new Error(d.checkoutDeliveryMethodUpdate.errors.map(e=>e.message).join(", ")); return d;});
+  }catch(e){ console.warn("ship persist:",e.message); }
+}
+/* Creates/refreshes checkout + delivery options whenever the address is
+   selected or edited. Cheapest method is auto-selected and saved. */
+async function refreshDelivery(silent){
+  const f=validForm(true); if(!f){ renderShipMethods([],null); return null; }
+  if(!CART.length) return null;
+  const box=document.getElementById('shipOpts');
+  try{
+    const co=await ensureCheckout(f.email,f.addr);
+    const c=await fetchShipMethods();
+    if(!renderShipMethods(c.shippingMethods,c.totalPrice)){
+      if(!silent) toast("Delivery is not available in your area");
+      return null;
+    }
+    await persistShipMethod();
+    const c2=await fetchShipMethods();
+    renderShipMethods(c2.shippingMethods,c2.totalPrice);
+    return {co, info:c2, f};
+  }catch(e){
+    console.warn(e);
+    if(!silent) toast((e.message||"Delivery failed").slice(0,140));
+    else box.innerHTML=`<p class="note" style="text-align:left;margin:0">${(e.message||"Could not load delivery options").slice(0,120)}</p>`;
+    return null;
+  }
+}
+let _dT=null;
+function scheduleDeliveryRefresh(){clearTimeout(_dT); _dT=setTimeout(()=>{refreshDelivery(true);},800);}
+/* Shared pre-flight for Place Order: valid address -> checkout -> cheapest
+   shipping method saved -> totals incl. shipping. Throws when unavailable. */
+async function prepareCheckout(){
+  const f=validForm(); if(!f) throw new Error("invalid");
+  if(!CART.length) throw new Error("Bag empty");
+  const r=await refreshDelivery(false);
+  if(!r) throw new Error("unavailable");
+  const total=r.info.totalPrice.gross.amount, cur=r.info.totalPrice.gross.currency;
+  return {co:r.co, total, cur, f};
+}
+function refreshPlaceBtn(){const p=document.getElementById('payTotal'); const t=p?p.textContent:LAST_TOTAL_TXT; document.getElementById('placeBtn').innerHTML=`Pay : <span id="payTotal">${t}</span>`}
+async function placeOrder(){
+  if(!CART.length) return toast("Bag empty");
+  const btn=document.getElementById('placeBtn'); btn.disabled=true; btn.textContent="Preparing payment…";
+  try{
+    const p=await prepareCheckout();
+    btn.disabled=false; refreshPlaceBtn();
+    await startCashfreeFlow(p.co,p.total,p.cur,p.f);
+  }catch(e){
+    console.warn(e); btn.disabled=false; refreshPlaceBtn();
+  }
+}
+/* ---------- Cashfree (popup + SDK modal) ---------- */
+function ppSetStatus(msg,cls=""){const el=document.getElementById('ppStatus'); el.className="pp-status "+cls; el.innerHTML=msg;}
+function openCashfreePopup(){document.getElementById('cashfreeModal').classList.add('open')}
+let CF_POLL=null, CF_COMPLETING=false, CF_LAST=null, _cfListeners=false, CF_MODE="sandbox";
+function closeCashfreePopup(cancel){
+  stopCashfreePolling();
+  hideCashfreeFrame();
+  document.getElementById('cashfreeModal').classList.remove('open');
+  if(cancel) toast("Cashfree cancelled — you can retry");
+}
+// Back-compat aliases (old PhonePe names now route to Cashfree)
+function openPhonepePopup(){return openCashfreePopup();}
+function closePhonepePopup(cancel){return closeCashfreePopup(cancel);}
+function hidePhonepeFrame(){return hideCashfreeFrame();}
+function hideCashfreeFrame(){
+  try{
+    document.getElementById('ppFrameWrap').style.display="none";
+    document.getElementById('ppFrame').src="about:blank";
+  }catch(e){}
+}
+function startCashfreePolling(){stopCashfreePolling(); CF_POLL=setInterval(()=>{autoVerifyCashfree(true);},4000);}
+function stopCashfreePolling(){if(CF_POLL){clearInterval(CF_POLL); CF_POLL=null;}}
+function stopPhonepePolling(){return stopCashfreePolling();}
+function armCashfreeReturnDetect(){
+  if(_cfListeners) return; _cfListeners=true;
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden) onCheckoutVisible();});
+  window.addEventListener("focus",()=>{onCheckoutVisible();});
+}
+function armPhonepeReturnDetect(){return armCashfreeReturnDetect();}
+function onCheckoutVisible(){
+  try{
+    const open=document.getElementById('cashfreeModal')?.classList.contains('open');
+    if(open&&CASHFREE_PENDING?.orderId&&!CF_COMPLETING) autoVerifyCashfree(true);
+  }catch(e){}
+}
+function cfRedirectUrl(){
+  try{
+    if(location.protocol.startsWith("http")) return location.origin+location.pathname+"?cashfree_return=1";
+  }catch(e){}
+  return "https://ayahfashion.com/checkout/success";
+}
+function cfPhone(addrPhone){
+  const raw=(addrPhone||"").replace(/\D/g,"");
+  return raw.length>=10?raw.slice(-10):"";
+}
+function cfEmail(fallback){
+  const e=(fallback||"").trim();
+  if(e && /.+@.+\..+/.test(e)) return e;
+  return "";
+}
+async function detectCashfreeMode(){
+  try{
+    const r=await fetch(CASHFREE_BASE+"/payments/gateways/cashfree/health/");
+    const j=await r.json();
+    const env=String(j.cashfreeEnv||"SANDBOX").toUpperCase();
+    CF_MODE=(env==="PRODUCTION"||env==="PROD"||env==="LIVE")?"production":"sandbox";
+  }catch(e){ CF_MODE=IS_LOCAL?"sandbox":"production"; }
+  return CF_MODE;
+}
+async function startCashfreeFlow(checkout,total,cur,form){
+  openCashfreePopup();
+  armCashfreeReturnDetect();
+  CF_LAST={co:checkout,total,cur,f:form};
+  hideCashfreeFrame();
+  document.getElementById('ppRetryRow').style.display="none";
+  document.getElementById('ppAmt').textContent=money(total,cur);
+  document.getElementById('ppPayLink').style.display="none";
+  document.getElementById('ppMeta').textContent="";
+  ppSetStatus(`<span class="spin" style="border-color:#0a6cff;border-top-color:transparent"></span> Creating Cashfree order for ${money(total,cur)}…`);
+  try{
+    const mode=await detectCashfreeMode();
+    const r=await fetch(CASHFREE_BASE+"/payments/gateways/cashfree/create/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({checkoutId:checkout.id,returnUrl:cfRedirectUrl(),customerPhone:cfPhone(form?.addr?.phone)||undefined,customerEmail:cfEmail(checkout.email||form?.email)||undefined})});
+    const j=await r.json();
+    if(!r.ok) throw new Error(j.error||("Cashfree create failed ("+r.status+")"));
+    if(!j.paymentSessionId && !j.paymentLink) throw new Error("Cashfree did not return paymentSessionId");
+    CASHFREE_PENDING={orderId:j.orderId,cfOrderId:j.cfOrderId||"",checkoutId:checkout.id,paymentSessionId:j.paymentSessionId||"",paymentLink:j.paymentLink||"",amount:j.amount,createdAt:Date.now()};
+    localStorage.setItem("ak_cashfree_pending",JSON.stringify(CASHFREE_PENDING));
+    // Clear any stale PhonePe pending key from previous integration
+    try{localStorage.removeItem("ak_phonepe_pending");}catch(e){}
+    document.getElementById('ppMeta').textContent=`Order: ${j.orderId} • ${money(total,cur)}`;
+    // Preferred: Cashfree JS SDK modal (stays on this page, one tab drives verification)
+    let sdkOpened=false;
+    try{
+      if(j.paymentSessionId && typeof Cashfree!=="undefined"){
+        const cf=Cashfree({mode});
+        const out=cf.checkout({paymentSessionId:j.paymentSessionId,redirectTarget:"_modal"});
+        if(out && typeof out.then==="function"){
+          sdkOpened=true;
+          out.then(()=>{ autoVerifyCashfree(false); }).catch(()=>{ autoVerifyCashfree(false); });
+        } else { sdkOpened=true; }
+        ppSetStatus(`✅ Pay securely in the Cashfree window (${money(total,cur)}). This popup closes automatically on success — no need to tap anything.`,"ok");
+      }
+    }catch(e){ console.warn("cashfree sdk:",e); sdkOpened=false; }
+    if(!sdkOpened){
+      // Fallback: embedded payment link iframe (same UX as before)
+      const link=j.paymentLink;
+      if(!link) throw new Error("Cashfree did not return a payment link");
+      document.getElementById('ppPayLink').style.display="";
+      document.getElementById('ppPayLink').href=link;
+      document.getElementById('ppFrame').src=link;
+      document.getElementById('ppNewTab').href=link;
+      document.getElementById('ppFrameWrap').style.display="";
+      ppSetStatus(`✅ Pay securely below (${money(total,cur)}). This popup closes automatically on success or failure — no need to tap anything.`,"ok");
+    }
+    startCashfreePolling();
+  }catch(e){ console.warn(e); hideCashfreeFrame(); ppSetStatus("❌ "+(e.message||"Failed").slice(0,300),"err"); toast((e.message||"Cashfree failed").slice(0,140)); }
+}
+async function getCashfreeState(){
+  if(!CASHFREE_PENDING?.orderId) return null;
+  const r=await fetch(CASHFREE_BASE+"/payments/gateways/cashfree/status/?orderId="+encodeURIComponent(CASHFREE_PENDING.orderId));
+  const j=await r.json();
+  const st=String(j.orderStatus||j?.order?.order_status||"UNKNOWN").toUpperCase();
+  const paid=!!j.paid;
+  document.getElementById('ppMeta').textContent=`Order: ${CASHFREE_PENDING.orderId} • Status: ${st}`;
+  return {state:st, paid, raw:j};
+}
+/* Auto-detect: called on popup return, tab focus, polling and Check Status.
+   Only completes when Cashfree reports PAID (paid=true); FAILED/EXPIRED ends the attempt. */
+async function autoVerifyCashfree(silent){
+  if(!CASHFREE_PENDING?.orderId||CF_COMPLETING) return null;
+  if(!silent) ppSetStatus("Checking payment status…");
+  let s;
+  try{ s=await getCashfreeState(); }
+  catch(e){ if(!silent) ppSetStatus("❌ Status check failed: "+e.message.slice(0,200),"err"); return null; }
+  if(!s) return null;
+  if(s.paid||s.state==="PAID"){ await completeCashfreeOrder(); }
+  else if(s.state==="FAILED"||s.state==="EXPIRED"||s.state==="CANCELLED"){ showCashfreeFailed(s.state); }
+  else if(!silent){ ppSetStatus(`Status: <b>${s.state}</b> — complete the payment on Cashfree; this popup detects it automatically.`); }
+  return s;
+}
+async function checkCashfreeStatus(manual){ await autoVerifyCashfree(!manual); }
+async function checkPhonepeStatus(manual){ await autoVerifyCashfree(!manual); }
+function showCashfreeFailed(state){
+  stopCashfreePolling();
+  hideCashfreeFrame();
+  const oid=CASHFREE_PENDING?.orderId||"";
+  CASHFREE_PENDING=null; localStorage.removeItem("ak_cashfree_pending");
+  ppSetStatus(`❌ Payment <b>${state||"FAILED"}</b> (order ${oid}). No order was placed and the failed attempt cannot be reused.<br/>Tap <b>↻ Try Again</b> below for a fresh payment.`,"err");
+  document.getElementById('ppRetryRow').style.display="";
+  toast("Cashfree payment failed");
+}
+function showPhonepeFailed(){ return showCashfreeFailed("FAILED"); }
+async function retryCashfree(){
+  document.getElementById('ppRetryRow').style.display="none";
+  if(!CF_LAST){ toast("Tap Pay again to restart"); closeCashfreePopup(false); return; }
+  await startCashfreeFlow(CF_LAST.co,CF_LAST.total,CF_LAST.cur,CF_LAST.f);
+}
+async function retryPhonepe(){ return retryCashfree(); }
+async function completeCashfreeOrder(){
+  if(!CASHFREE_PENDING?.orderId) return;
+  CF_COMPLETING=true;
+  ppSetStatus(`<span class="spin" style="border-color:#0a6cff;border-top-color:transparent"></span> Payment received — placing your order…`);
+  try{
+    const r=await fetch(CASHFREE_BASE+"/payments/gateways/cashfree/complete/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({orderId:CASHFREE_PENDING.orderId,checkoutId:CASHFREE_PENDING.checkoutId})});
+    const j=await r.json();
+    if(!r.ok) throw new Error(j.message||j.error||("Order failed ("+r.status+") status="+(j.orderStatus||"unknown")));
+    const o=j.order||{};
+    const orderInfo={number:o.orderNumber||o.orderId||"", amountTxt:(typeof LAST_TOTAL_TXT!=="undefined"&&LAST_TOTAL_TXT!=="—")?LAST_TOTAL_TXT:"", orderId:CASHFREE_PENDING.orderId, gateway:"cashfree", ts:Date.now()};
+    stopCashfreePolling();
+    CART=[]; localStorage.setItem("ak_cart",JSON.stringify(CART));
+    localStorage.removeItem("ak_cashfree_pending"); CASHFREE_PENDING=null;
+    try{localStorage.removeItem("ak_phonepe_pending");}catch(e){}
+    CHECKOUT=null; SHIPMETHOD=null; SHIP_PRICE=null; SHIP_CACHE=[]; PROMO_CODE=null; PROMO_DISCOUNT=0;
+    try{ sessionStorage.setItem("ak_order_success",JSON.stringify(orderInfo)); }catch(e){}
+    try{ localStorage.setItem("ak_last_order",JSON.stringify(orderInfo)); }catch(e){}
+    location.href="../payment-success/";
+  }catch(e){
+    console.warn(e);
+    if(/not completed/i.test(e.message||"")){ ppSetStatus("Payment is still processing — waiting for Cashfree confirmation…"); }
+    else{ ppSetStatus("❌ "+(e.message||"Order failed").slice(0,400),"err"); toast((e.message||"Order failed").slice(0,150)); }
+  }
+  finally{ CF_COMPLETING=false; }
+}
+async function completePhonepeOrder(){ return completeCashfreeOrder(); }
+async function autoVerifyPhonepe(silent){ return autoVerifyCashfree(silent); }
+function handleCashfreeReturn(){
+  try{
+    // If Cashfree redirected inside the embedded frame, hand control to the
+    // top-level checkout page instead of nesting pages inside the frame.
+    if(window.self!==window.top){ try{window.top.location.href=location.href;}catch(e){} return; }
+    const q=new URLSearchParams(location.search);
+    const oid=q.get("order_id")||q.get("orderId");
+    if(oid) { CASHFREE_PENDING=CASHFREE_PENDING||{}; CASHFREE_PENDING.orderId=oid; try{const prev=JSON.parse(localStorage.getItem("ak_cashfree_pending")||"null")||{}; CASHFREE_PENDING={...prev,...CASHFREE_PENDING};}catch(e){} localStorage.setItem("ak_cashfree_pending",JSON.stringify(CASHFREE_PENDING)); }
+    if(q.get("cashfree_return")==="1"||oid){
+      if(CASHFREE_PENDING?.orderId){
+        openCashfreePopup();
+        armCashfreeReturnDetect();
+        document.getElementById('ppMeta').textContent=`Order: ${CASHFREE_PENDING.orderId} • Returned from Cashfree`;
+        ppSetStatus("Back from Cashfree — verifying payment automatically…","ok");
+        history.replaceState(null,"",location.pathname);
+        autoVerifyCashfree(false);
+        startCashfreePolling();
+      }else{
+        // Stale return (e.g. another tab already finished this payment).
+        history.replaceState(null,"",location.pathname);
+        let done=null;
+        try{done=JSON.parse(localStorage.getItem("ak_last_order")||"null");}catch(e){}
+        if(done&&done.number&&(Date.now()-(done.ts||0)<30*60*1000)){ location.href="../payment-success/"; }
+      }
+    }
+  }catch(e){console.warn("cashfree return parse",e)}
+}
+function handlePhonepeReturn(){
+  // Legacy query (?phonepe_return=1) -> ignore; delegate to Cashfree handler.
+  try{
+    const q=new URLSearchParams(location.search);
+    if(q.get("phonepe_return")==="1"){ history.replaceState(null,"",location.pathname); }
+  }catch(e){}
+  return handleCashfreeReturn();
+}
+function render(){
+  const lines=document.getElementById('lines'), badge=document.getElementById('countBadge'), tot=document.getElementById('totals'), payTotal=document.getElementById('payTotal');
+  if(!CART.length){ lines.innerHTML=`<div class="empty">Your bag is empty. <a href="../#shop" style="color:var(--primary);text-decoration:underline">Go to shop →</a></div>`; badge.textContent="0 items"; tot.innerHTML=""; LAST_TOTAL_TXT="—"; if(payTotal) payTotal.textContent="—"; document.getElementById('placeBtn').disabled=true; return;}
+  document.getElementById('placeBtn').disabled=false;
+  badge.textContent=CART.length+" items • "+CART.reduce((s,c)=>s+c.qty,0)+" pcs";
+  lines.innerHTML=CART.map((c,i)=>`<div class="line"><img src="${c.img}" alt=""/><div style="flex:1"><div style="font-weight:700;font-size:13px">${c.name}</div><div style="font-size:11px;color:var(--muted)">${c.vName||c.sku}${c.size?` • Size ${c.size}`:""} • Qty ${c.qty}</div><div style="display:flex;justify-content:space-between;margin-top:6px"><span style="font-size:13px">${money(c.price,c.currency)} × ${c.qty}</span><b>${money(c.price*c.qty,c.currency)}</b></div><div style="display:flex;gap:6px;margin-top:6px"><button onclick="chg(${i},-1)" style="border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 8px;cursor:pointer">−</button><button onclick="chg(${i},1)" style="border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 8px;cursor:pointer">+</button><button onclick="rem(${i})" style="margin-left:auto;border:none;background:none;color:var(--muted);cursor:pointer">Remove</button></div></div></div>`).join("");
+  const sub=CART.reduce((s,c)=>s+c.price*c.qty,0), cur=CART[0]?.currency||"INR", ship=SHIP_PRICE?SHIP_PRICE.amount:(sub>999?0:79), sCur=SHIP_PRICE?.currency||cur, discount=PROMO_DISCOUNT||0, total=Math.max(0,sub+ship-discount);
+  tot.innerHTML=`<div class="row"><span>Subtotal</span><b>${money(sub,cur)}</b></div><div class="row"><span>Shipping</span><span>${ship?money(ship,sCur):"Free"}</span></div>${discount?`<div class="row"><span>Discount${PROMO_CODE?` (${PROMO_CODE})`:""}</span><span style="color:#0d7a3f">− ${money(discount,cur)}</span></div>`:""}<div class="row total"><span>Total</span><span>${money(total,cur)}</span></div>`;
+  LAST_TOTAL_TXT=money(total,cur);
+  if(payTotal) payTotal.textContent=LAST_TOTAL_TXT;
+}
+window.chg=(i,d)=>{CART[i].qty+=d; if(CART[i].qty<=0) CART.splice(i,1); localStorage.setItem("ak_cart",JSON.stringify(CART)); render(); scheduleDeliveryRefresh()};
+window.rem=(i)=>{CART.splice(i,1); localStorage.setItem("ak_cart",JSON.stringify(CART)); render(); scheduleDeliveryRefresh()};
+function updatePromoUI(){
+  const btn=document.getElementById('promoBtn'), msg=document.getElementById('promoMsg');
+  if(PROMO_CODE){btn.textContent="Remove"; msg.style.display=""; msg.innerHTML=`✅ <b>${PROMO_CODE}</b> applied — you save <b>${money(PROMO_DISCOUNT)}</b> <a href="#" onclick="removeCoupon();return false;" style="color:var(--primary);text-decoration:underline">remove</a>`;}
+  else{btn.textContent="Apply"; msg.style.display="none"; msg.innerHTML="";}
+}
+async function applyCoupon(){
+  if(PROMO_CODE){ await removeCoupon(); return; }
+  const inp=document.getElementById('coupon'), code=inp.value.trim();
+  if(!code) return toast("Enter coupon");
+  if(!CART.length) return toast("Bag empty");
+  const f=validForm(); if(!f) return;
+  const btn=document.getElementById('promoBtn'); btn.disabled=true; btn.textContent="…";
+  try{
+    const co=await ensureCheckout(f.email,f.addr);
+    await applyPromoToCheckout(co.id,code);
+    inp.value=PROMO_CODE;
+    await refreshDelivery(false);
+    render();
+    toast(`Coupon ${PROMO_CODE} applied ✓`);
+  }catch(e){ toast((e.message||"Invalid coupon").slice(0,140)); updatePromoUI(); }
+  finally{ btn.disabled=false; updatePromoUI(); }
+}
+/* ---------- available offers (discounts API) ---------- */
+async function loadOffers(){
+  const box=document.getElementById('offersBox'), list=document.getElementById('offersList'), cheap=document.getElementById('cheapList');
+  if(!box||!list) return;
+  try{
+    const r=await fetch(window.APP_CONFIG.API_BASE+"/discounts-and-cheap-products/");
+    if(!r.ok) throw new Error("offers "+r.status);
+    const j=await r.json();
+    const discounts=(j&&j.discounts)||[];
+    const cheaps=(j&&j.cheapProducts)||[];
+    if(!discounts.length&&!cheaps.length) return;
+    list.innerHTML=discounts.map(d=>{
+      const val=d.discountValueType==="percentage"?`${d.discountValue}% OFF`:(d.discountValue!=null?`${money(d.discountValue,d.currency||"INR")} OFF`:"Offer");
+      const extra=[d.minSpent?`min ${money(d.minSpent,d.currency||"INR")}`:"",d.endDate?`ends ${new Date(d.endDate).toLocaleDateString("en-IN")}`:""].filter(Boolean).join(" • ");
+      const code=String(d.code||"").replace(/"/g,"&quot;");
+      return `<div class="off"><button class="code" onclick="pickOffer('${code}')" title="Tap to apply">${code}</button><span><b>${d.name||code}</b> — ${val}${extra?` <span style="color:var(--muted)">(${extra})</span>`:""}</span></div>`;
+    }).join("");
+    if(cheaps.length&&cheap){
+      cheap.style.display="";
+      cheap.innerHTML=cheaps.map(c=>{
+        const nm=c.name||"Deal", slug=c.slug||"", img=c.thumbnail?.url||c.thumbnail||c.image||"", pr=c.price!=null?money(c.price,c.currency||"INR"):(c.pricing?.priceRange?.start?.gross?money(c.pricing.priceRange.start.gross.amount,c.pricing.priceRange.start.gross.currency):"");
+        const href=slug?`../product/?slug=${encodeURIComponent(slug)}`:"#";
+        return `<a href="${href}">${img?`<img src="${img}" alt=""/>`:""}<span>${nm}${pr?`<br/>${pr}`:""}</span></a>`;
+      }).join("");
+    }
+    box.classList.add('show');
+  }catch(e){ console.warn("offers:",e.message); }
+}
+function pickOffer(code){
+  if(!code) return;
+  document.getElementById('coupon').value=code;
+  applyCoupon();
+}
+async function removeCoupon(){
+  try{
+    if(CHECKOUT&&PROMO_CODE){
+      await gql(`mutation($id:ID!,$code:String!){checkoutRemovePromoCode(id:$id,promoCode:$code){checkout{id} errors{field message}}}`,
+        {id:CHECKOUT.id,code:PROMO_CODE}).then(d=>{if(d.checkoutRemovePromoCode.errors?.length) throw new Error(d.checkoutRemovePromoCode.errors.map(e=>e.message).join(", "));});
+    }
+  }catch(e){ console.warn("promo remove:",e.message); }
+  PROMO_CODE=null; PROMO_DISCOUNT=0;
+  document.getElementById('coupon').value="";
+  updatePromoUI(); render();
+  refreshDelivery(true);
+  toast("Coupon removed");
+}
+function showSuccess(){document.getElementById('success').classList.add('open')}
+function closeSucc(){document.getElementById('success').classList.remove('open')}
+(function(){
+  const btn=document.getElementById('hamBtn'), nav=document.getElementById('mainNav'), backdrop=document.getElementById('navBackdrop');
+  if(!btn||!nav) return;
+  function toggle(open){
+    const isOpen = open ?? !nav.classList.contains('open');
+    nav.classList.toggle('open', isOpen);
+    btn.classList.toggle('open', isOpen);
+    backdrop.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  btn.addEventListener('click', ()=> toggle());
+  backdrop.addEventListener('click', ()=> toggle(false));
+  nav.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> toggle(false)));
+  window.addEventListener('resize', ()=> { if(window.innerWidth>900) toggle(false); });
+})();
+if(IS_LOCAL){document.getElementById('localLoginBox').classList.add('show'); document.getElementById('localAddrBox').classList.add('show');}
+try{if(TOKEN){const l=document.getElementById('ordersLink'); if(l) l.style.display="";}}catch(e){}
+refreshAcct(); render(); handleCashfreeReturn(); loadOffers();
+// If another tab finishes this order, follow it to the success page
+// instead of getting stranded on checkout.
+window.addEventListener("storage",(e)=>{
+  if(e.key!=="ak_last_order"||!e.newValue) return;
+  try{
+    const o=JSON.parse(e.newValue);
+    if(o&&o.number&&(Date.now()-(o.ts||0)<30*60*1000)){ stopCashfreePolling(); location.href="../payment-success/"; }
+  }catch(_){}
+});
+["firstName","lastName","phone","street","city","state","postal","country"].forEach(id=>{const el=document.getElementById(id); if(el) el.addEventListener("change",scheduleDeliveryRefresh);});
+console.log("[checkout] GRAPHQL="+GRAPHQL+" CASHFREE_BASE="+CASHFREE_BASE);
+</script>
+</body>
+</html>

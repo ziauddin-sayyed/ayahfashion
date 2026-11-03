@@ -1,0 +1,108 @@
+{
+  "file_name": "Size chart Ayah Fashion.pdf",
+  "sections": {
+    "Hanger Set": [
+      {"size": "6m 1y", "length": 13, "shoulder": 8, "chest": 20, "pant_waist": 13, "pant_length": 14},
+      {"size": "1y 2y", "length": 13.5, "shoulder": 8.5, "chest": 21, "pant_waist": 14, "pant_length": 16},
+      {"size": "2y 3y", "length": 14, "shoulder": 9, "chest": 22, "pant_waist": 15, "pant_length": 18},
+      {"size": "3y 4y", "length": 15, "shoulder": 9.5, "chest": 23, "pant_waist": 16, "pant_length": 20},
+      {"size": "4y 5y", "length": 16, "shoulder": 10, "chest": 24, "pant_waist": 17, "pant_length": 22},
+      {"size": "5y 6y", "length": 17, "shoulder": 10.5, "chest": 25, "pant_waist": 18, "pant_length": 24},
+      {"size": "6y 7y", "length": 18, "shoulder": 11, "chest": 26, "pant_waist": 19, "pant_length": 26}
+    ],
+    "Frock Cap Sleeves": [
+      {"size": "0m 6m", "length": 12, "shoulder": 7.5, "chest": 9.5},
+      {"size": "6m 9m", "length": 14, "shoulder": 8, "chest": 10},
+      {"size": "1y 2y", "length": 16, "shoulder": 8.5, "chest": 10.5},
+      {"size": "2y 3y", "length": 18, "shoulder": 9, "chest": 11},
+      {"size": "3y 4y", "length": 20, "shoulder": 9.5, "chest": 11.5},
+      {"size": "4y 5y", "length": 22, "shoulder": 10, "chest": 12},
+      {"size": "5y 6y", "length": 24, "shoulder": 10.5, "chest": 12.5},
+      {"size": "6y 7y", "length": 26, "shoulder": 11, "chest": 13},
+      {"size": "7y 8y", "length": 28, "shoulder": 11.5, "chest": 13.5},
+      {"size": "8y 9y", "length": 30, "shoulder": 12, "chest": 14},
+      {"size": "9y 10y", "length": 32, "shoulder": 12.5, "chest": 14.5},
+      {"size": "10y 11y", "length": 34, "shoulder": 13, "chest": 15},
+      {"size": "11y 12y", "length": 36, "shoulder": 13.5, "chest": 15.5},
+      {"size": "12y 13y", "length": 38, "shoulder": 14, "chest": 16}
+    ],
+    "Frock Full Sleeves": [
+      {"size": "0m 6m", "length": 12, "shoulder": 7.5, "chest": 9.5, "sleeves": 9},
+      {"size": "6m 9m", "length": 14, "shoulder": 8, "chest": 10, "sleeves": 10},
+      {"size": "1y 2y", "length": 16, "shoulder": 8.5, "chest": 10.5, "sleeves": 11},
+      {"size": "2y 3y", "length": 18, "shoulder": 9, "chest": 11, "sleeves": 11.5},
+      {"size": "3y 4y", "length": 20, "shoulder": 9.5, "chest": 11.5, "sleeves": 12},
+      {"size": "4y 5y", "length": 22, "shoulder": 10, "chest": 12, "sleeves": 12.5},
+      {"size": "5y 6y", "length": 24, "shoulder": 10.5, "chest": 12.5, "sleeves": 13},
+      {"size": "6y 7y", "length": 26, "shoulder": 11, "chest": 13, "sleeves": 13.5},
+      {"size": "7y 8y", "length": 28, "shoulder": 11.5, "chest": 13.5, "sleeves": 14},
+      {"size": "8y 9y", "length": 30, "shoulder": 12, "chest": 14, "sleeves": 14.5},
+      {"size": "9y 10y", "length": 32, "shoulder": 12.5, "chest": 14.5, "sleeves": 15},
+      {"size": "10y 11y", "length": 34, "shoulder": 13, "chest": 15, "sleeves": 15.5},
+      {"size": "11y 12y", "length": 36, "shoulder": 13.5, "chest": 15.5, "sleeves": 16},
+      {"size": "12y 13y", "length": 38, "shoulder": 14, "chest": 16, "sleeves": 16.5}
+    ],
+    "Kurti Set": [
+      {"size": "1y 2y", "length": 16, "chest": 31, "shoulder": 9.5, "hip": 22, "pant_length": 16, "pant_waist": 14},
+      {"size": "2y 3y", "length": 18, "chest": 31.5, "shoulder": 10, "hip": 23, "pant_length": 18, "pant_waist": 15},
+      {"size": "3y 4y", "length": 20, "chest": 32, "shoulder": 10.5, "hip": 24, "pant_length": 20, "pant_waist": 16},
+      {"size": "4y 5y", "length": 22, "chest": 32.5, "shoulder": 11, "hip": 25, "pant_length": 22, "pant_waist": 17},
+      {"size": "5y 6y", "length": 24, "chest": 33, "shoulder": 11.5, "hip": 26, "pant_length": 24, "pant_waist": 18},
+      {"size": "6y 7y", "length": 26, "chest": 33.5, "shoulder": 12, "hip": 27, "pant_length": 26, "pant_waist": 19},
+      {"size": "7y 8y", "length": 28, "chest": 34, "shoulder": 12.5, "hip": 28, "pant_length": 28, "pant_waist": 20},
+      {"size": "8y 9y", "length": 30, "chest": 34.5, "shoulder": 13, "hip": 29, "pant_length": 30, "pant_waist": 21},
+      {"size": "9y 10y", "length": 32, "chest": 35, "shoulder": 13.5, "hip": 30, "pant_length": 32, "pant_waist": 22},
+      {"size": "10y 11y", "length": 34, "chest": 35.5, "shoulder": 14, "hip": 31, "pant_length": 34, "pant_waist": 23},
+      {"size": "11y 12y", "length": 36, "chest": 36, "shoulder": 14.5, "hip": 32, "pant_length": 36, "pant_waist": 24},
+      {"size": "12y 13y", "length": 38, "chest": 38, "shoulder": 15, "hip": 33, "pant_length": 38, "pant_waist": 25},
+      {"size": "13y 14y", "length": 40, "chest": 40, "shoulder": 15.5, "hip": 34, "pant_length": 40, "pant_waist": 26}
+    ],
+    "Kurti Set Ladies": [
+      {"size": "M", "length": "45-50", "chest": 38, "shoulder": 15, "hip": 42, "pant_length": 40, "pant_waist": 26},
+      {"size": "L", "length": "45-50", "chest": 40, "shoulder": 15.25, "hip": 42.5, "pant_length": 40, "pant_waist": 27},
+      {"size": "XL", "length": "45-50", "chest": 42, "shoulder": 15.5, "hip": 43, "pant_length": 40, "pant_waist": 28},
+      {"size": "XXL", "length": "45-50", "chest": 44, "shoulder": 15.75, "hip": 43.5, "pant_length": 40, "pant_waist": 29},
+      {"size": "3XL", "length": "45-50", "chest": 46, "shoulder": 16, "hip": 44, "pant_length": 40, "pant_waist": 30},
+      {"size": "4XL", "length": "45-50", "chest": 48, "shoulder": 16.25, "hip": 44.5, "pant_length": 40, "pant_waist": 31},
+      {"size": "5XL", "length": "45-50", "chest": 50, "shoulder": 16.5, "hip": 45, "pant_length": 40, "pant_waist": 32},
+      {"size": "6XL", "length": "45-50", "chest": 52, "shoulder": 16.75, "hip": 45.5, "pant_length": 40, "pant_waist": 33},
+      {"size": "7XL", "length": "45-50", "chest": 54, "shoulder": 17, "hip": 46, "pant_length": 40, "pant_waist": 34},
+      {"size": "8XL", "length": "45-50", "chest": 56, "shoulder": 17.25, "hip": 46.5, "pant_length": 40, "pant_waist": 35}
+    ],
+    "Cord Set": [
+      {"size": "1y 2y", "length": 12, "chest": 11.5, "shoulder": 9.5, "hip": 22, "pant_length": 16, "pant_waist": 14},
+      {"size": "2y 3y", "length": 14, "chest": 12, "shoulder": 10, "hip": 23, "pant_length": 18, "pant_waist": 15},
+      {"size": "3y 4y", "length": 16, "chest": 12.5, "shoulder": 10.5, "hip": 24, "pant_length": 20, "pant_waist": 16},
+      {"size": "4y 5y", "length": 18, "chest": 13, "shoulder": 11, "hip": 25, "pant_length": 22, "pant_waist": 17},
+      {"size": "5y 6y", "length": 20, "chest": 13.5, "shoulder": 11.5, "hip": 26, "pant_length": 24, "pant_waist": 18},
+      {"size": "6y 7y", "length": 22, "chest": 14, "shoulder": 12, "hip": 27, "pant_length": 26, "pant_waist": 19},
+      {"size": "7y 8y", "length": 24, "chest": 14.5, "shoulder": 12.5, "hip": 28, "pant_length": 28, "pant_waist": 20},
+      {"size": "8y 9y", "length": 26, "chest": 15, "shoulder": 13, "hip": 29, "pant_length": 30, "pant_waist": 21},
+      {"size": "9y 10y", "length": 28, "chest": 16, "shoulder": 13.5, "hip": 30, "pant_length": 32, "pant_waist": 22},
+      {"size": "10y 11y", "length": 30, "chest": 17, "shoulder": 14, "hip": 31, "pant_length": 34, "pant_waist": 23},
+      {"size": "11y 12y", "length": 32, "chest": 18, "shoulder": 14.5, "hip": 32, "pant_length": 36, "pant_waist": 24},
+      {"size": "12y 13y", "length": 34, "chest": 19, "shoulder": 15, "hip": 33, "pant_length": 38, "pant_waist": 25},
+      {"size": "14y 15y", "length": 36, "chest": 20, "shoulder": 15.5, "hip": 34, "pant_length": 40, "pant_waist": 26}
+    ],
+    "Cord Set Ladies": [
+      {"size": "M", "length": "34-36", "chest": 38, "shoulder": 15, "hip": 42, "pant_length": 40, "pant_waist": 26},
+      {"size": "L", "length": "34-36", "chest": 40, "shoulder": 15.25, "hip": 42.5, "pant_length": 40, "pant_waist": 27},
+      {"size": "XL", "length": "34-36", "chest": 42, "shoulder": 15.5, "hip": 43, "pant_length": 40, "pant_waist": 28},
+      {"size": "XXL", "length": "34-36", "chest": 44, "shoulder": 15.75, "hip": 43.5, "pant_length": 40, "pant_waist": 29},
+      {"size": "3XL", "length": "34-36", "chest": 46, "shoulder": 16, "hip": 44, "pant_length": 40, "pant_waist": 30},
+      {"size": "4XL", "length": "34-36", "chest": 48, "shoulder": 16.25, "hip": 44.5, "pant_length": 40, "pant_waist": 31},
+      {"size": "5XL", "length": "34-36", "chest": 50, "shoulder": 16.5, "hip": 45, "pant_length": 40, "pant_waist": 32},
+      {"size": "6XL", "length": "34-36", "chest": 52, "shoulder": 16.75, "hip": 45.5, "pant_length": 40, "pant_waist": 33},
+      {"size": "7XL", "length": "34-36", "chest": 54, "shoulder": 17, "hip": 46, "pant_length": 40, "pant_waist": 34},
+      {"size": "8XL", "length": "34-36", "chest": 56, "shoulder": 17.25, "hip": 46.5, "pant_length": 40, "pant_waist": 35}
+    ],
+    "Mini Frock Cap Sleeves": [
+      {"size": "0m 6m", "length": 12, "shoulder": 7.5, "chest": 9.5},
+      {"size": "6m 9m", "length": 14, "shoulder": 8, "chest": 10}
+    ],
+    "Mini Frock Full Sleeves": [
+      {"size": "0m 6m", "length": 12, "shoulder": 7.5, "chest": 9.5, "sleeves": 9},
+      {"size": "6m 9m", "length": 14, "shoulder": 8, "chest": 10, "sleeves": 10}
+    ]
+  }
+}

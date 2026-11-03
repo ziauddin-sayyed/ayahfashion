@@ -1,0 +1,471 @@
+saleor_dashboard_setup:
+
+  # 1. CREATE ATTRIBUTES FIRST
+  attributes:
+
+    product_attributes:
+      - name: Gender
+        type: DROPDOWN
+        values:
+          - Girls
+          - Women
+
+      - name: Age Group
+        type: DROPDOWN
+        values:
+          - Baby
+          - Kids
+          - Ladies
+
+      - name: Sleeve Type
+        type: DROPDOWN
+        values:
+          - Cap Sleeves
+          - Full Sleeves
+
+      - name: Color
+        type: DROPDOWN
+
+      - name: Fabric
+        type: DROPDOWN
+
+      - name: Pattern
+        type: DROPDOWN
+
+      - name: Occasion
+        type: MULTISELECT
+
+    variant_attributes:
+
+      - name: Size
+        type: DROPDOWN
+        values:
+          kids:
+            - "0m 6m"
+            - "6m 9m"
+            - "1y 2y"
+            - "2y 3y"
+            - "3y 4y"
+            - "4y 5y"
+            - "5y 6y"
+            - "6y 7y"
+            - "7y 8y"
+            - "8y 9y"
+            - "9y 10y"
+            - "10y 11y"
+            - "11y 12y"
+            - "12y 13y"
+            - "13y 14y"
+            - "14y 15y"
+
+          ladies:
+            - M
+            - L
+            - XL
+            - XXL
+            - 3XL
+            - 4XL
+            - 5XL
+            - 6XL
+            - 7XL
+            - 8XL
+
+      - name: Length
+        type: NUMERIC
+
+      - name: Shoulder
+        type: NUMERIC
+
+      - name: Chest
+        type: NUMERIC
+
+      - name: Hip
+        type: NUMERIC
+
+      - name: Sleeve Length
+        type: NUMERIC
+
+      - name: Pant Length
+        type: NUMERIC
+
+      - name: Pant Waist
+        type: NUMERIC
+
+
+  # 2. PRODUCT TYPES
+  product_types:
+
+    - name: Frock
+      variant_attributes:
+        - Size
+        - Length
+        - Shoulder
+        - Chest
+        - Sleeve Length
+      product_attributes:
+        - Gender
+        - Age Group
+        - Sleeve Type
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+    - name: Mini Frock
+      variant_attributes:
+        - Size
+        - Length
+        - Shoulder
+        - Chest
+        - Sleeve Length
+      product_attributes:
+        - Gender
+        - Age Group
+        - Sleeve Type
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+    - name: Hanger Set
+      variant_attributes:
+        - Size
+        - Length
+        - Shoulder
+        - Chest
+        - Pant Waist
+        - Pant Length
+      product_attributes:
+        - Gender
+        - Age Group
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+    - name: Kurti Set
+      variant_attributes:
+        - Size
+        - Length
+        - Chest
+        - Shoulder
+        - Hip
+        - Pant Length
+        - Pant Waist
+      product_attributes:
+        - Gender
+        - Age Group
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+    - name: Ladies Kurti Set
+      variant_attributes:
+        - Size
+        - Length
+        - Chest
+        - Shoulder
+        - Hip
+        - Pant Length
+        - Pant Waist
+      product_attributes:
+        - Gender
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+    - name: Cord Set
+      variant_attributes:
+        - Size
+        - Length
+        - Chest
+        - Shoulder
+        - Hip
+        - Pant Length
+        - Pant Waist
+      product_attributes:
+        - Gender
+        - Age Group
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+    - name: Ladies Cord Set
+      variant_attributes:
+        - Size
+        - Length
+        - Chest
+        - Shoulder
+        - Hip
+        - Pant Length
+        - Pant Waist
+      product_attributes:
+        - Gender
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+
+  # 3. CATEGORIES
+  categories:
+
+    - Kids Wear:
+        - Dresses:
+            - Frocks
+            - Mini Frocks
+        - Ethnic Wear:
+            - Kurti Sets
+        - Co-ord Sets:
+            - Cord Sets
+        - Sets:
+            - Hanger Sets
+
+    - Ladies Wear:
+        - Kurti Sets
+        - Cord Sets
+
+
+  # 4. SIZE CHARTS
+  # Predefine these as variant attribute values in Dashboard.
+
+  size_charts:
+
+    Frock:
+      Cap Sleeves:
+        - size: "0m 6m"
+          length: 12
+          shoulder: 7.5
+          chest: 9.5
+
+        - size: "6m 9m"
+          length: 14
+          shoulder: 8
+          chest: 10
+
+        - size: "1y 2y"
+          length: 16
+          shoulder: 8.5
+          chest: 10.5
+
+        - size: "2y 3y"
+          length: 18
+          shoulder: 9
+          chest: 11
+
+        - size: "3y 4y"
+          length: 20
+          shoulder: 9.5
+          chest: 11.5
+
+        - size: "4y 5y"
+          length: 22
+          shoulder: 10
+          chest: 12
+
+        - size: "5y 6y"
+          length: 24
+          shoulder: 10.5
+          chest: 12.5
+
+        - size: "6y 7y"
+          length: 26
+          shoulder: 11
+          chest: 13
+
+        - size: "7y 8y"
+          length: 28
+          shoulder: 11.5
+          chest: 13.5
+
+        - size: "8y 9y"
+          length: 30
+          shoulder: 12
+          chest: 14
+
+        - size: "9y 10y"
+          length: 32
+          shoulder: 12.5
+          chest: 14.5
+
+        - size: "10y 11y"
+          length: 34
+          shoulder: 13
+          chest: 15
+
+        - size: "11y 12y"
+          length: 36
+          shoulder: 13.5
+          chest: 15.5
+
+        - size: "12y 13y"
+          length: 38
+          shoulder: 14
+          chest: 16
+
+
+    # 5. PRODUCT CREATION EXAMPLE
+    products:
+
+      - name: "Girls Floral Frock"
+        category: "Kids Wear / Dresses / Frocks"
+        product_type: "Frock"
+
+        product_attributes:
+          Gender: Girls
+          Age Group: Kids
+          Sleeve Type: Full Sleeves
+          Color: Pink
+          Fabric: Cotton
+          Pattern: Floral
+
+        variants:
+
+          - sku: "GFF-0M-6M"
+            size: "0m 6m"
+            price: 999
+            measurements:
+              Length: 12
+              Shoulder: 7.5
+              Chest: 9.5
+              Sleeve Length: 9
+
+          - sku: "GFF-6M-9M"
+            size: "6m 9m"
+            price: 1049
+            measurements:
+              Length: 14
+              Shoulder: 8
+              Chest: 10
+              Sleeve Length: 10
+
+          - sku: "GFF-1Y-2Y"
+            size: "1y 2y"
+            price: 1099
+            measurements:
+              Length: 16
+              Shoulder: 8.5
+              Chest: 10.5
+              Sleeve Length: 11
+
+          - sku: "GFF-2Y-3Y"
+            size: "2y 3y"
+            price: 1149
+            measurements:
+              Length: 18
+              Shoulder: 9
+              Chest: 11
+              Sleeve Length: 11.5
+
+
+  # 6. IMPORTANT SALEOR DASHBOARD WORKFLOW
+  dashboard_order:
+
+    step_1:
+      menu: "Products → Attributes"
+      action: "Create product and variant attributes"
+
+    step_2:
+      menu: "Products → Product Types"
+      action: "Create product types and assign attributes"
+
+    step_3:
+      menu: "Products → Categories"
+      action: "Create category hierarchy"
+
+    step_4:
+      menu: "Products → Products → Create Product"
+      action: "Select category and product type"
+
+    step_5:
+      action: "Add product attributes"
+
+    step_6:
+      action: "Add variants"
+      rule: "One variant per purchasable size"
+
+    step_7:
+      action: "Assign predefined Size value to each variant"
+
+    step_8:
+      action: "Enter variant-specific measurements"
+
+    step_9:
+      action: "Enter price for each variant"
+
+    step_10:
+      action: "Add SKU, stock and images"
+
+    step_11:
+      action: "Publish product to required channel"
+
+
+  # 7. PRICE MODEL
+  pricing:
+
+    product:
+      example: "Girls Floral Frock"
+
+    variants:
+      - size: "0m 6m"
+        price: 999
+
+      - size: "6m 9m"
+        price: 1049
+
+      - size: "1y 2y"
+        price: 1099
+
+      - size: "2y 3y"
+        price: 1149
+
+    rule: >
+      Price belongs to the Saleor variant, not to the Size attribute.
+      Therefore the same product can have a different price for every size.
+
+
+  # 8. FINAL DASHBOARD STRUCTURE
+  dashboard:
+
+    Attributes:
+      Product:
+        - Gender
+        - Age Group
+        - Sleeve Type
+        - Color
+        - Fabric
+        - Pattern
+        - Occasion
+
+      Variant:
+        - Size
+        - Length
+        - Shoulder
+        - Chest
+        - Hip
+        - Sleeve Length
+        - Pant Length
+        - Pant Waist
+
+    Product Types:
+      - Frock
+      - Mini Frock
+      - Hanger Set
+      - Kurti Set
+      - Ladies Kurti Set
+      - Cord Set
+      - Ladies Cord Set
+
+    Categories:
+      - Kids Wear
+      - Ladies Wear
+
+    Products:
+      - "One product = one design/style"
+      - "One variant = one purchasable size"
+      - "Each variant = its own price"
+      - "Each variant = its own SKU"
+      - "Each variant = its own measurements"

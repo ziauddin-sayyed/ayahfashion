@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Profile — Ayah Fashion</title>
+<link rel="icon" href="https://catalog.wlimg.com/1/4698801/other-images/favicon.ico"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Ayah Fashion"/>
+<meta property="og:title" content="Profile — Ayah Fashion"/>
+<meta property="og:description" content="Your orders & addresses at Ayah Fashion, Mumbai."/>
+<meta property="og:image" content="/images/slider/new/3.jpeg"/>
+<meta property="og:image:width" content="1416"/>
+<meta property="og:image:height" content="1111"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Profile — Ayah Fashion"/>
+<meta name="twitter:description" content="Your orders & addresses at Ayah Fashion, Mumbai."/>
+<meta name="twitter:image" content="/images/slider/new/3.jpeg"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand-grad:linear-gradient(135deg,#FFF7AD 0%,#FFD0D3 50%,#FFA9FA 100%);--brand-grad-hover:linear-gradient(135deg,#FFEFA0 0%,#FFC4C7 50%,#FF98F6 100%);--on-grad:#3A2B2B}
+:root{--primary:#c0006b;--accent:#e70080;--accent-dark:#c0006b;--yellow:#f6ba22;--cream:#fdfcff;--blush:#fef0f7;--line:#efe6f0;--muted:#7A6E6A;--ink:#1E1E1E;--sage:#f3f0f7}
+*{box-sizing:border-box}body{margin:0;font-family:"Plus Jakarta Sans",sans-serif;background:var(--cream);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+.announce{background:var(--brand-grad);color:var(--on-grad);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:9px 16px}
+.header{position:sticky;top:0;z-index:20;background:rgba(255,249,242,.8);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--line);border-top:3px solid transparent;border-image:linear-gradient(90deg,#FFF7AD 0%,#FFD0D3 50%,#FFA9FA 100%) 1}
+.header-inner{max-width:1280px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;position:relative;justify-content:space-between}
+.logo{position:absolute;left:50%;transform:translateX(-50%);font-family:"Cormorant Garamond",serif;font-weight:700;font-size:26px;letter-spacing:.08em}
+.logo img{height:46px;border-radius:8px;padding:4px 6px}
+.nav{display:flex;gap:22px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#4A3F3B}
+.nav a:hover{color:var(--accent)}
+.hamburger{display:none;width:40px;height:40px;border:1px solid var(--line);background:#fff;border-radius:10px;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;flex-shrink:0}
+.hamburger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px}
+.nav-backdrop{display:none;position:fixed;inset:0;background:rgba(20,14,14,.32);z-index:19}
+.nav-backdrop.open{display:block}
+@media(max-width:900px){
+  .header-inner{padding:10px 12px;gap:10px}
+  .logo{position:static;transform:none;font-size:19px}
+  .logo img{height:34px}
+  .hamburger{display:flex}
+  .nav{display:none}
+  .nav.open{display:flex;position:fixed;top:62px;left:12px;right:12px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;flex-direction:column;z-index:45;gap:0}
+  .nav.open a{padding:14px 8px;font-size:14px}
+  .header-inner>a:last-child{font-size:11px!important;padding:7px 10px!important;white-space:nowrap}
+}
+.wrap{max-width:860px;margin:22px auto;padding:0 20px}
+@media(max-width:640px){.wrap{padding:0 12px}.card{padding:16px!important}}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
+.card h1{font-family:"Cormorant Garamond",serif;margin:0 0 6px;font-size:30px}
+.sub{font-size:13px;color:var(--muted);margin:0 0 16px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.field label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.field input,.field select{border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14px;outline:none;background:#fff;width:100%}
+.field input:focus{border-color:var(--primary)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+.btn-primary{width:100%;background:#fff;color:var(--primary);border:none;padding:14px;border-radius:999px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;margin-top:6px}
+.btn-ghost{width:100%;background:#fff;border:1px solid var(--line);padding:12px;border-radius:999px;font-weight:700;cursor:pointer;margin-top:8px}
+.btn-sm{width:auto;padding:8px 18px;margin:0;font-size:12px}
+.tabs{display:flex;gap:8px;margin:14px 0}
+.tabs button{flex:1;border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px;font-weight:700;cursor:pointer;font-size:13px}
+.tabs button.on{background:var(--brand-grad);color:var(--on-grad);border-color:var(--primary)}
+.order{border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px;background:#fff}
+.order.current{border:2px solid var(--accent);box-shadow:0 8px 24px rgba(231,0,128,.15)}
+.ohead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.ohead b{font-size:16px}
+.pill{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--sage);padding:5px 12px;border-radius:999px}
+.pill.cur{background:var(--brand-grad);color:var(--on-grad)}
+.oline{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:8px 0;border-top:1px dashed var(--line);margin-top:8px}
+.oline small{color:var(--muted)}
+.otot{display:flex;justify-content:space-between;font-weight:800;margin-top:8px;font-size:15px}
+.meta{font-size:12px;color:var(--muted);margin-top:6px}
+.accthi{display:flex;align-items:center;gap:10px;background:var(--sage);border-radius:14px;padding:12px;font-size:14px;margin-bottom:6px;flex-wrap:wrap}
+.accthi b{color:var(--primary)}
+.addr{border:1px solid var(--line);border-radius:16px;padding:14px;margin-top:12px}
+.addr.def{border-color:var(--primary);background:rgba(192,0,107,.03)}
+.addr .who{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.badge{font-size:11px;background:var(--sage);padding:4px 8px;border-radius:999px}
+.badge.def{background:var(--brand-grad);color:var(--on-grad)}
+.addrbtns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.addrbtns button{flex:1;min-width:100px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 10px;font-weight:700;cursor:pointer;font-size:12px}
+.addrbtns button.danger{color:#b3261e;border-color:#f3c1c1}
+.modal{position:fixed;inset:0;display:none;place-items:center;padding:20px;z-index:60}
+.modal.open{display:grid}.modal-bg{position:absolute;inset:0;background:rgba(20,14,14,.5);backdrop-filter:blur(6px)}
+.modal-card{position:relative;background:#fff;border-radius:24px;padding:28px;max-width:520px;width:100%;text-align:left;max-height:92vh;overflow:auto}
+@media(max-width:640px){.modal{padding:12px}.modal-card{padding:20px 16px}}
+.pp-status{font-size:13px;color:var(--muted);background:var(--sage);border-radius:12px;padding:10px 12px;margin:10px 0}
+.pp-status.err{background:#fdecec;color:#b3261e}
+.pp-btnrow{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.pp-btnrow .btn-ghost,.pp-btnrow .btn-primary{margin-top:0;flex:1;min-width:140px}
+@media(max-width:640px){.pp-btnrow .btn-ghost,.pp-btnrow .btn-primary{min-width:0}}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(80px);background:var(--brand-grad);color:var(--on-grad);padding:12px 16px;border-radius:999px;font-size:13px;opacity:0;transition:.3s;z-index:50}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.print-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;font-weight:700;cursor:pointer;font-size:12px;margin-top:10px}
+.print-btn:hover{border-color:var(--accent);color:var(--accent)}
+#printArea{display:none}
+@media print{
+  @page{size:4in 6in;margin:0}
+  body{background:#fff!important}
+  body>*{display:none!important}
+  #printArea{display:block!important;width:4in;height:6in;overflow:hidden;background:#fff;color:#000}
+}
+.footer{background:var(--brand-grad);color:var(--on-grad);margin-top:40px;padding:28px 20px}
+.footer-inner{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px}
+</style>
+<link rel="stylesheet" href="../theme.css"/>
+<script src="../theme.js"></script>
+</head>
+<body>
+<div class="announce">Ayah Fashion • Est. 2003 • Mumbai</div>
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo"><img src="../images/logo_new.png" alt="Ayah Fashion"/></a>
+    <button class="hamburger" id="hamBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav"><a href="../#shop">Shop</a><a href="../products/">Products</a><a href="../profile/">My Profile</a></nav>
+    <div style="flex:1"></div>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <a href="../" style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:8px 14px;border-radius:999px;background:#fff">← Continue Shopping</a>
+<button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false"><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="card" id="loginCard" style="display:none">
+    <h1>Profile</h1>
+    <p class="sub">Log in to see your orders and addresses.</p>
+    <div class="field"><label>Email *</label><input type="email" id="liEmail" placeholder="you@example.com"/></div>
+    <div class="field"><label>Password *</label><input type="password" id="liPass" placeholder="••••••••"/></div>
+    <button class="btn-primary" onclick="doLogin()">Log in</button>
+    <p class="sub" style="margin:12px 0 0">New here? <a href="../checkout/" style="color:var(--primary);text-decoration:underline">Create an account at checkout →</a></p>
+  </div>
+
+  <div class="card" id="profileCard" style="display:none">
+    <h1>Profile</h1>
+    <div class="accthi">👋 Hi, <b id="acctName">—</b><span style="color:var(--muted);font-size:12px" id="acctEmail"></span><button class="btn-ghost btn-sm" style="margin-left:auto" onclick="doLogout()">Log out</button></div>
+    <div class="tabs"><button id="tabOrders" class="on" onclick="profTab('orders')">Orders</button><button id="tabAddrs" onclick="profTab('addrs')">Addresses</button></div>
+    <div id="paneOrders"><div id="orders"></div></div>
+    <div id="paneAddrs" style="display:none">
+      <div id="addrList"></div>
+      <button class="btn-ghost" style="width:auto;padding:10px 18px" onclick="openAddrModal()">+ New Address</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="addrModal"><div class="modal-bg" onclick="closeAddrModal()"></div><div class="modal-card">
+  <b style="font-size:18px" id="addrTitle">+ New Address</b>
+  <p class="sub" style="margin:4px 0 12px">Follows Saleor address standards</p>
+  <div class="grid2">
+    <div class="field"><label>First name *</label><input id="naFirst" placeholder="Aqueel"/></div>
+    <div class="field"><label>Last name *</label><input id="naLast" placeholder="Khan"/></div>
+  </div>
+  <div class="field"><label>Phone *</label><input id="naPhone" placeholder="+91 70219 46362"/></div>
+  <div class="field"><label>Street address *</label><input id="naStreet" placeholder="A-7, Kasturchand Mill Compound"/></div>
+  <div class="grid2">
+    <div class="field"><label>City *</label><input id="naCity" value="Mumbai"/></div>
+    <div class="field"><label>Country Area (State) *</label><input id="naState" value="Maharashtra"/></div>
+  </div>
+  <div class="grid2">
+    <div class="field"><label>Zipcode *</label><input id="naPostal" value="400028"/></div>
+    <div class="field"><label>Country *</label><select id="naCountry"><option value="IN" selected>India (IN)</option><option value="US">United States (US)</option><option value="GB">United Kingdom (GB)</option><option value="AE">UAE (AE)</option><option value="SA">Saudi Arabia (SA)</option></select></div>
+  </div>
+  <div class="pp-status" id="addrStatus" style="display:none"></div>
+  <div class="pp-btnrow">
+    <button class="btn-primary pp-paybtn" id="addrSaveBtn" style="background:#5f259f;color:#fff;border:none;cursor:pointer" onclick="saveAddress()">Save Address</button>
+  </div>
+  <div class="pp-btnrow">
+    <button class="btn-ghost" style="flex:1" onclick="closeAddrModal()">Cancel</button>
+  </div>
+</div></div>
+
+<footer class="footer"><div class="footer-inner"><span>© 2026 Ayah Fashion • Ayah Fashion</span><span><a href="../terms-and-conditions/">Terms</a> • <a href="../privacy-policy/">Privacy</a> • <a href="../refund-policy/">Refunds</a> • <a href="../return-policy/">Returns</a> • <a href="../shipping-policy/">Shipping</a></span><span>Mumbai 400028</span></div></footer>
+<div class="toast" id="toast"></div>
+<div id="printArea"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="../config.js"></script>
+<script>
+const GRAPHQL = window.APP_CONFIG.GRAPHQL;
+let USER=JSON.parse(localStorage.getItem("ak_user")||"null"), TOKEN=localStorage.getItem("ak_token")||null;
+let EDIT_ID=null, ADDR_CACHE=[];
+const ADDR_Q=`{me{email addresses{id firstName lastName streetAddress1 city postalCode country{code} countryArea phone isDefaultShippingAddress}}}`;
+const SELLER={name:"Ayah Fashion",addr:"A-7, Ground Floor, Kasturchand Mill Compound, M.C. Jawale Marg, Mumbai - 400028, Maharashtra, India",phone:"+91 70219 46362",gstin:"27JHIPK9504H1ZX"};
+let ORDER_CACHE=[];
+function esc(s){return (s==null?"":String(s)).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function money(a,c="INR"){return new Intl.NumberFormat('en-IN',{style:'currency',currency:c,maximumFractionDigits:0}).format(a)}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600)}
+function fmtDate(s){try{return new Date(s).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}catch(e){return s||""}}
+async function gql(q,v={},token=null){const h={"Content-Type":"application/json"}; if(token) h["Authorization"]="Bearer "+token; const r=await fetch(GRAPHQL,{method:"POST",headers:h,body:JSON.stringify({query:q,variables:v})}); const j=await r.json(); if(j.errors) throw new Error(j.errors[0]?.message||"Request failed"); return j.data}
+function profTab(w){document.getElementById('tabOrders').classList.toggle('on',w==='orders'); document.getElementById('tabAddrs').classList.toggle('on',w==='addrs'); document.getElementById('paneOrders').style.display=w==='orders'?"":"none"; document.getElementById('paneAddrs').style.display=w==='addrs'?"":"none"; if(w==='addrs') loadAddrs();}
+async function doLogin(){const e=document.getElementById('liEmail').value.trim(), p=document.getElementById('liPass').value; if(!e||!p) return toast("Enter email + password"); try{
+  const d=await gql(`mutation($e:String!,$p:String!){tokenCreate(email:$e,password:$p){token user{id email firstName lastName} errors{message}}}`,{e,p});
+  if(d.tokenCreate.errors?.length) throw new Error(d.tokenCreate.errors.map(x=>x.message).join(", ")); if(!d.tokenCreate.token) throw new Error("Login failed");
+  TOKEN=d.tokenCreate.token; USER=d.tokenCreate.user; localStorage.setItem("ak_token",TOKEN); localStorage.setItem("ak_user",JSON.stringify(USER)); toast("Logged in ✓"); boot();
+}catch(err){toast(err.message.slice(0,140))}}
+function doLogout(){USER=null; TOKEN=null; localStorage.removeItem("ak_token"); localStorage.removeItem("ak_user"); boot(); toast("Logged out")}
+async function boot(){
+  const logged=!!(USER&&TOKEN);
+  document.getElementById('loginCard').style.display=logged?"none":"";
+  document.getElementById('profileCard').style.display=logged?"":"none";
+  if(!logged) return;
+  document.getElementById('acctName').textContent=USER.firstName||USER.email;
+  document.getElementById('acctEmail').textContent="("+USER.email+")";
+  loadOrders();
+}
+async function loadOrders(){
+  const box=document.getElementById('orders'); box.innerHTML="<p class='sub'>Loading orders…</p>";
+  try{
+    const d=await gql(`{me{orders(first:20){edges{node{id number created status statusDisplay paymentStatusDisplay shippingMethodName customerNote subtotal{gross{amount currency}} shippingPrice{gross{amount currency}} total{gross{amount currency}} shippingAddress{firstName lastName streetAddress1 city postalCode country{code} countryArea phone} lines{quantity productName productSku variantName variant{sku name} totalPrice{gross{amount currency}}}}}}}}`,{},TOKEN);
+    if(!d.me){doLogout(); return;}
+    const edges=d.me?.orders?.edges||[];
+    ORDER_CACHE=edges.map(e=>e.node);
+    if(!edges.length){box.innerHTML="<p class='sub'>No orders yet. <a href='../#shop' style='color:var(--primary);text-decoration:underline'>Start shopping →</a></p>"; return;}
+    box.innerHTML=edges.map((e,i)=>{const o=e.node; const lines=o.lines||[]; return `<div class="order ${i===0?'current':''}">
+      <div class="ohead"><b>Order #${o.number}</b><span class="pill ${i===0?'cur':''}">${o.statusDisplay||o.status||""}</span></div>
+      <div class="meta">${fmtDate(o.created)} • ${o.paymentStatusDisplay||""}${o.shippingMethodName?` • Delivery: ${o.shippingMethodName}`:""}</div>
+      ${lines.map(l=>{const nm=l.variant?.name||l.variantName||l.productName||l.variant?.sku||l.productSku||"Item"; const amt=l.totalPrice?.gross; return `<div class="oline"><span><b>${nm}</b> <small>× ${l.quantity}</small></span><b>${amt!=null?money(amt.amount,amt.currency):""}</b></div>`}).join("")}
+      <div class="otot"><span>Total</span><span>${o.total?.gross?money(o.total.gross.amount,o.total.gross.currency):""}</span></div>
+      <button class="print-btn" onclick="printSlipByIdx(${i})">🖨 Print 4×6 slip</button>
+      <button class="print-btn" onclick="openInvoice(${i})">🧾 Invoice</button>
+    </div>`}).join("");
+  }catch(err){box.innerHTML="<p class='sub'>Couldn’t load orders: "+(err.message||"error").slice(0,120)+"</p>"}
+}
+function fmtAddr(a){
+  if(!a) return "—";
+  const nm=[a.firstName,a.lastName].filter(Boolean).join(" ");
+  const lines=[nm,a.streetAddress1,[a.city,a.countryArea].filter(Boolean).join(", ")+(a.postalCode?" - "+a.postalCode:""),a.phone||""].filter(Boolean);
+  return lines.map(esc).join("<br/>");
+}
+function openInvoice(i){
+  const o=ORDER_CACHE[i];
+  if(!o) return toast("Order not found");
+  try{localStorage.setItem("ak_print_order",JSON.stringify(o));}catch(e){}
+  location.href='../printproductpage/?number='+encodeURIComponent(o.number||"");
+}
+function printSlipByIdx(i){
+  const o=ORDER_CACHE[i];
+  if(!o) return toast("Order not found");
+  const a=o.shippingAddress||{};
+  const cname=[a.firstName,a.lastName].filter(Boolean).join(" ")||"Customer";
+  const trackUrl="https://ayahfashion.com/orders/"+(o.number||o.id);
+  const lines=o.lines||[];
+  const rows=lines.map((l,ix)=>{
+    const nm=l.variant?.name||l.variantName||l.productName||l.variant?.sku||l.productSku||"Item";
+    const amt=l.totalPrice?.gross?money(l.totalPrice.gross.amount,l.totalPrice.gross.currency):"—";
+    return `<tr><td style="padding:3px 4px;border-top:1px dashed #999">${ix+1}</td><td style="padding:3px 4px;border-top:1px dashed #999">${esc(nm)} × ${l.quantity}</td><td align="right" style="padding:3px 4px;border-top:1px dashed #999">${esc(amt)}</td></tr>`;
+  }).join("");
+  const sub=o.subtotal?.gross?money(o.subtotal.gross.amount,o.subtotal.gross.currency):null;
+  const ship=o.shippingPrice?.gross?money(o.shippingPrice.gross.amount,o.shippingPrice.gross.currency):null;
+  const tot=o.total?.gross?money(o.total.gross.amount,o.total.gross.currency):"—";
+  document.getElementById('printArea').innerHTML=`
+  <div style="width:4in;height:6in;padding:0.22in 0.25in;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;color:#000;background:#fff">
+    <div style="display:flex;align-items:center;gap:8px;border-bottom:2px solid #000;padding-bottom:6px">
+      <img src="../images/logo_new.png" style="height:30px" alt=""/>
+      <div style="flex:1"><div style="font-size:14px;font-weight:800">AYAH Fashion</div><div style="font-size:9px">by Ayah Fashion • Shipping Slip</div></div>
+      <div style="text-align:right;font-size:10px"><b>Order #${esc(o.number||"")}</b><br/>${esc(fmtDate(o.created))}</div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:6px">
+      <div style="flex:1;border:1px solid #000;border-radius:6px;padding:5px 7px"><b style="font-size:9px">SHIP TO</b><br/><b>${esc(cname)}</b><br/>${fmtAddr(a)}</div>
+      <div style="flex:1;border:1px solid #000;border-radius:6px;padding:5px 7px"><b style="font-size:9px">SOLD BY</b><br/><b>${esc(SELLER.name)}</b><br/>${esc(SELLER.addr)}<br/>${esc(SELLER.phone)}<br/>GSTIN: ${esc(SELLER.gstin)}</div>
+    </div>
+    <table style="width:100%;border-collapse:collapse;margin-top:6px;font-size:10px"><tr style="font-size:9px;text-align:left"><th style="padding:3px 4px">#</th><th style="padding:3px 4px">Item</th><th style="padding:3px 4px" align="right">Amount</th></tr>${rows}</table>
+    <div style="margin-top:4px;font-size:10px">
+      ${sub?`<div style="display:flex;justify-content:space-between"><span>Subtotal</span><span>${esc(sub)}</span></div>`:""}
+      ${ship?`<div style="display:flex;justify-content:space-between"><span>Shipping${o.shippingMethodName?" ("+esc(o.shippingMethodName)+")":""}</span><span>${esc(ship)}</span></div>`:""}
+      <div style="display:flex;justify-content:space-between;font-size:13px;font-weight:800;border-top:2px solid #000;margin-top:3px;padding-top:3px"><span>Total</span><span>${esc(tot)}</span></div>
+      <div style="font-size:9px">Payment: ${esc(o.paymentStatusDisplay||"")}</div>
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:10px;margin-top:6px">
+      <div style="flex:1;font-size:9px">Scan to track your order:<br/><b style="font-size:8px;word-break:break-all">${esc(trackUrl)}</b><br/><br/>Thank you for shopping with Ayah Fashion!</div>
+      <div id="slipQr" style="width:84px;height:84px"></div>
+    </div>
+  </div>`;
+  const qrEl=document.getElementById('slipQr');
+  const doPrint=()=>setTimeout(()=>window.print(),350);
+  try{
+    if(window.QRCode && qrEl){
+      new QRCode(qrEl,{text:trackUrl,width:84,height:84,correctLevel:QRCode.CorrectLevel.M});
+      doPrint();
+    }else if(qrEl){
+      const im=new Image();
+      im.onload=doPrint; im.onerror=doPrint;
+      im.src="https://api.qrserver.com/v1/create-qr-code/?size=84x84&data="+encodeURIComponent(trackUrl);
+      qrEl.appendChild(im);
+      setTimeout(()=>window.print(),2500);
+    }else doPrint();
+  }catch(e){ doPrint(); }
+}
+async function loadAddrs(){
+  const box=document.getElementById('addrList'); box.innerHTML="<p class='sub'>Loading addresses…</p>";
+  try{
+    const d=await gql(ADDR_Q,{},TOKEN);
+    const list=d?.me?.addresses||[];
+    ADDR_CACHE=list;
+    if(!list.length){box.innerHTML="<p class='sub'>No saved addresses yet.</p>"; return;}
+    box.innerHTML=list.map((a,i)=>{const code=(a.country&&a.country.code)||"IN"; return `<div class="addr ${a.isDefaultShippingAddress?'def':''}">
+      <div class="who"><b>${a.firstName} ${a.lastName}</b>${a.isDefaultShippingAddress?'<span class="badge def">Default</span>':""}</div>
+      <div class="meta">${a.streetAddress1}, ${a.city}, ${a.countryArea||""} ${a.postalCode} (${code})${a.phone?`<br/>${a.phone}`:""}</div>
+      <div class="addrbtns">
+        ${a.isDefaultShippingAddress?"":`<button onclick="setDefault('${a.id}')">Set Default</button>`}
+        <button onclick="editAddrByIdx(${i})">Edit</button>
+        <button class="danger" onclick="delAddr('${a.id}')">Delete</button>
+      </div>
+    </div>`}).join("");
+  }catch(err){box.innerHTML="<p class='sub'>Couldn’t load addresses: "+(err.message||"error").slice(0,120)+"</p>"}
+}
+function openAddrModal(){EDIT_ID=null; document.getElementById('addrTitle').textContent="+ New Address"; ["naFirst","naLast","naPhone","naStreet","naCity","naPostal"].forEach(id=>document.getElementById(id).value=""); document.getElementById('naState').value="Maharashtra"; document.getElementById('naCity').value="Mumbai"; document.getElementById('naPostal').value="400028"; document.getElementById('naCountry').value="IN"; const st=document.getElementById('addrStatus'); st.style.display="none"; document.getElementById('addrModal').classList.add('open');}
+function editAddrByIdx(i){const a=ADDR_CACHE[i]; if(a) editAddr(a);}
+function editAddr(a){EDIT_ID=a.id; document.getElementById('addrTitle').textContent="Edit Address"; document.getElementById('naFirst').value=a.firstName||""; document.getElementById('naLast').value=a.lastName||""; document.getElementById('naPhone').value=a.phone||""; document.getElementById('naStreet').value=a.streetAddress1||""; document.getElementById('naCity').value=a.city||""; document.getElementById('naState').value=a.countryArea||""; document.getElementById('naPostal').value=a.postalCode||""; document.getElementById('naCountry').value=(a.country&&a.country.code)||"IN"; const st=document.getElementById('addrStatus'); st.style.display="none"; document.getElementById('addrModal').classList.add('open');}
+function closeAddrModal(){document.getElementById('addrModal').classList.remove('open');}
+async function saveAddress(){
+  const v=id=>document.getElementById(id).value.trim();
+  const input={firstName:v('naFirst'),lastName:v('naLast'),streetAddress1:v('naStreet'),city:v('naCity'),postalCode:v('naPostal'),country:v('naCountry')||"IN",countryArea:v('naState'),phone:v('naPhone')};
+  const st=document.getElementById('addrStatus'); st.style.display=""; st.className="pp-status";
+  if(!input.firstName||!input.lastName||!input.streetAddress1||!input.city||!input.postalCode||!input.countryArea){st.classList.add("err"); st.textContent="Please fill all required fields."; return;}
+  const btn=document.getElementById('addrSaveBtn'); btn.disabled=true; btn.innerHTML=`<span class="spin"></span> Saving…`;
+  try{
+    if(EDIT_ID){
+      const d=await gql(`mutation($id:ID!,$in:AddressInput!){accountAddressUpdate(id:$id,input:$in){address{id} accountErrors{field message code}}}`,{id:EDIT_ID,in:input},TOKEN);
+      if(d.accountAddressUpdate.accountErrors?.length) throw new Error(d.accountAddressUpdate.accountErrors.map(e=>e.message).join(", "));
+    }else{
+      const d=await gql(`mutation($in:AddressInput!){accountAddressCreate(input:$in){address{id} errors{field message code}}}`,{in:input},TOKEN);
+      if(d.accountAddressCreate.errors?.length) throw new Error(d.accountAddressCreate.errors.map(e=>e.message).join(", "));
+    }
+    closeAddrModal(); toast("Address saved ✓"); loadAddrs();
+  }catch(e){st.classList.add("err"); st.textContent="❌ "+e.message.slice(0,200);}
+  finally{btn.disabled=false; btn.textContent="Save Address";}
+}
+async function setDefault(id){
+  try{
+    const d=await gql(`mutation($id:ID!){accountSetDefaultAddress(id:$id,type:SHIPPING){user{id} accountErrors{field message code}}}`,{id},TOKEN);
+    if(d.accountSetDefaultAddress.accountErrors?.length) throw new Error(d.accountSetDefaultAddress.accountErrors.map(e=>e.message).join(", "));
+    toast("Default address updated ✓"); loadAddrs();
+  }catch(e){toast(e.message.slice(0,140))}
+}
+async function delAddr(id){
+  if(!confirm("Delete this address?")) return;
+  try{
+    const d=await gql(`mutation($id:ID!){accountAddressDelete(id:$id){address{id} accountErrors{field message code}}}`,{id},TOKEN);
+    if(d.accountAddressDelete.accountErrors?.length) throw new Error(d.accountAddressDelete.accountErrors.map(e=>e.message).join(", "));
+    toast("Address deleted"); loadAddrs();
+  }catch(e){toast(e.message.slice(0,140))}
+}
+(function(){
+  const btn=document.getElementById('hamBtn'), nav=document.getElementById('mainNav'), backdrop=document.getElementById('navBackdrop');
+  if(!btn||!nav) return;
+  function toggle(force){const on=force??!nav.classList.contains('open'); nav.classList.toggle('open',on); backdrop.classList.toggle('open',on); document.body.style.overflow=on?'hidden':'';}
+  btn.addEventListener('click',()=>toggle()); backdrop.addEventListener('click',()=>toggle(false));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+  window.addEventListener('resize',()=>{if(window.innerWidth>900)toggle(false);});
+})();
+boot();
+</script>
+</body>
+</html>
