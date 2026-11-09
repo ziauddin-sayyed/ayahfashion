@@ -62,7 +62,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ---------- page shells ---------- */
 html[data-theme="dark"] body { background: var(--cream); color: var(--ink); }
-html[data-theme="dark"] .splash { background: var(--cream); }
+/* splash keeps the brand gradient (yellow → pink) in dark mode too */
 html[data-theme="dark"] .header { background: rgba(20, 19, 24, .92); }
 html[data-theme="dark"] .nav { color: var(--ink); }
 html[data-theme="dark"] .nav.open,
